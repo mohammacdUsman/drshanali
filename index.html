@@ -1,0 +1,1321 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shan Ali | FinTech, Web3 &amp; Blockchain Legal Counsel</title>
+  <meta name="description"
+    content="Shan Ali — PhD Fellow in Blockchain Law | FinTech, Web3 &amp; Corporate Legal Counsel | DeFi, Digital Asset &amp; Cross-Border Compliance | Licensed Attorney, Islamabad." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖</text></svg>" />
+  <style>
+    /* === HERO === */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 120px 0 60px;
+      overflow: hidden;
+      background: var(--primary-dark);
+      color: #fff;
+    }
+
+    .hero-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('images/hero_bg.jpg');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.35;
+      z-index: 0;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, var(--primary-dark) 0%, transparent 100%);
+      z-index: 1;
+    }
+
+    .hero .container {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+    }
+
+    .hero-content {
+      max-width: 620px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      background: rgba(201, 146, 58, 0.2);
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      border-radius: 50px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+
+    .hero-slider {
+      position: relative;
+      min-height: 280px;
+    }
+
+    .hero-slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.5s ease-in-out;
+      transform: translateY(20px);
+    }
+
+    .hero-slide.active {
+      opacity: 1;
+      visibility: visible;
+      position: relative;
+      transform: translateY(0);
+    }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 5vw, 4.5rem);
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 24px;
+      color: #fff;
+    }
+
+    .hero h1 span {
+      color: var(--accent);
+    }
+
+    .hero-desc {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: rgba(255, 255, 255, 0.85);
+      margin-bottom: 40px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 48px;
+    }
+
+    .hero-dots {
+      display: flex;
+      gap: 12px;
+    }
+
+    .hero-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.3);
+      border: none;
+      cursor: pointer;
+      transition: background var(--transition);
+    }
+
+    .hero-dot.active {
+      background: var(--accent);
+      box-shadow: 0 0 10px var(--accent);
+    }
+
+    .hero-scroll {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      z-index: 2;
+      animation: bounce 2s infinite;
+    }
+
+    .hero-scroll-line {
+      width: 2px;
+      height: 40px;
+      background: linear-gradient(to bottom, transparent, var(--accent));
+    }
+
+    @keyframes bounce {
+
+      0%,
+      20%,
+      50%,
+      80%,
+      100% {
+        transform: translateY(0) translateX(-50%);
+      }
+
+      40% {
+        transform: translateY(-10px) translateX(-50%);
+      }
+
+      60% {
+        transform: translateY(-5px) translateX(-50%);
+      }
+    }
+
+    /* === TRUST BADGE MARQUEE === */
+    .marquee-container {
+      overflow: hidden;
+      white-space: nowrap;
+      padding: 40px 0;
+      background: var(--bg-light);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .marquee-container::before,
+    .marquee-container::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 150px;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .marquee-container::before {
+      left: 0;
+      background: linear-gradient(to right, var(--bg-light), transparent);
+    }
+
+    .marquee-container::after {
+      right: 0;
+      background: linear-gradient(to left, var(--bg-light), transparent);
+    }
+
+    .marquee-content {
+      display: flex;
+      gap: 80px;
+      animation: scroll-marquee 30s linear infinite;
+      align-items: center;
+      will-change: transform;
+    }
+
+    .marquee-container:hover .marquee-content {
+      animation-play-state: paused;
+    }
+
+    .trust-badge {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      opacity: 0.6;
+      transition: opacity 0.3s, color 0.3s;
+      cursor: default;
+      white-space: nowrap;
+    }
+
+    .trust-badge:hover {
+      opacity: 1;
+      color: var(--primary);
+    }
+
+    .trust-badge svg {
+      width: 36px;
+      height: 36px;
+      fill: none;
+    }
+
+    @keyframes scroll-marquee {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(calc(-100% / 2));
+      }
+    }
+
+    /* === ABOUT SECTION === */
+    .about {
+      background: var(--white);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .about-img-wrap {
+      position: relative;
+    }
+
+    .about-img {
+      width: 100%;
+      height: 520px;
+      object-fit: cover;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .about-img-badge {
+      position: absolute;
+      bottom: 28px;
+      right: -20px;
+      background: var(--primary);
+      color: #fff;
+      padding: 20px 24px;
+      border-radius: var(--radius-md);
+      text-align: center;
+      box-shadow: var(--shadow-md);
+    }
+
+    .about-img-badge-num {
+      display: block;
+      font-size: 2.2rem;
+      font-weight: 800;
+      font-family: var(--font-heading);
+      color: var(--accent);
+      line-height: 1;
+    }
+
+    .about-img-badge-text {
+      font-size: 0.75rem;
+      opacity: 0.8;
+      line-height: 1.3;
+      margin-top: 4px;
+    }
+
+    .about-title {
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      margin-bottom: 20px;
+    }
+
+    .about-title span {
+      color: var(--primary);
+    }
+
+    .about-text {
+      color: var(--text-body);
+      margin-bottom: 16px;
+      line-height: 1.8;
+    }
+
+    .about-quote {
+      border-left: 3px solid var(--accent);
+      padding-left: 20px;
+      font-style: italic;
+      color: var(--text-body);
+      margin: 20px 0;
+      font-size: 1.05rem;
+    }
+
+    .about-list {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .about-list li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.92rem;
+      color: var(--text-body);
+    }
+
+    .about-list li::before {
+      content: "✓";
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    /* === STATS === */
+    .stats {
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      padding: 70px 0;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+    }
+
+    .stat-item {
+      text-align: center;
+      color: #fff;
+      padding: 20px;
+    }
+
+    .stat-num {
+      display: block;
+      font-family: var(--font-heading);
+      font-size: 3rem;
+      font-weight: 800;
+      color: var(--accent);
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+
+    .stat-divider {
+      width: 30px;
+      height: 2px;
+      background: rgba(255, 255, 255, 0.3);
+      margin: 0 auto 12px;
+    }
+
+    .stat-label {
+      font-size: 0.85rem;
+      opacity: 0.8;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* === PRACTICE AREA CARDS === */
+    .practice {
+      background: var(--bg-section);
+    }
+
+    .practice-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      perspective: 1000px;
+    }
+
+    .practice-card {
+      background: var(--white);
+      border-radius: var(--radius-md);
+      padding: 36px 28px;
+      border: 1px solid var(--border);
+      transition: transform 0.15s ease-out, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      transform-style: preserve-3d;
+      will-change: transform;
+    }
+
+    .practice-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+      transform: scaleX(0);
+      transition: transform var(--transition);
+    }
+
+    .practice-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg);
+      border-color: transparent;
+    }
+
+    .practice-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .practice-icon {
+      font-size: 2.2rem;
+      margin-bottom: 18px;
+    }
+
+    .practice-card h3 {
+      font-size: 1.15rem;
+      margin-bottom: 12px;
+      color: var(--text-dark);
+    }
+
+    .practice-card p {
+      font-size: 0.9rem;
+      color: var(--text-body);
+      line-height: 1.7;
+    }
+
+    .practice-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 16px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--accent);
+      cursor: pointer;
+      transition: gap var(--transition);
+    }
+
+    .practice-card:hover .practice-link {
+      gap: 10px;
+    }
+
+    /* === WHY CHOOSE ME === */
+    .why {
+      background: var(--white);
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      perspective: 1000px;
+    }
+
+    .why-card {
+      background: var(--cream);
+      border-radius: var(--radius-md);
+      padding: 32px 24px;
+      border: 1px solid var(--cream-dark);
+      transition: transform 0.15s ease-out, background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+      transform-style: preserve-3d;
+      will-change: transform;
+    }
+
+    .why-card:hover {
+      background: var(--white);
+      border-color: var(--accent);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-4px);
+    }
+
+    .why-icon {
+      font-size: 2rem;
+      margin-bottom: 16px;
+    }
+
+    .why-card h3 {
+      font-size: 1.05rem;
+      margin-bottom: 10px;
+      color: var(--primary);
+    }
+
+    .why-card p {
+      font-size: 0.88rem;
+      color: var(--text-body);
+      line-height: 1.7;
+    }
+
+    /* === COMPLIANCE QUIZ === */
+    .quiz-section {
+      padding: 90px 0;
+      background: var(--cream);
+    }
+
+    .quiz-container {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 50px;
+      box-shadow: var(--shadow-md);
+      max-width: 760px;
+      margin: 0 auto;
+      border: 1px solid var(--border);
+    }
+
+    .quiz-header {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+
+    .quiz-title {
+      font-size: clamp(1.4rem, 3vw, 1.9rem);
+      margin-bottom: 10px;
+    }
+
+    .quiz-subtitle {
+      font-size: 0.92rem;
+      color: var(--text-body);
+    }
+
+    .quiz-progress {
+      height: 5px;
+      background: var(--bg-light);
+      border-radius: 50px;
+      margin-bottom: 36px;
+      overflow: hidden;
+    }
+
+    .quiz-progress-bar {
+      height: 100%;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+      border-radius: 50px;
+      transition: width 0.4s ease;
+    }
+
+    .quiz-step {
+      display: none;
+    }
+
+    .quiz-step.active {
+      display: block;
+    }
+
+    .quiz-question {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+      color: var(--text-dark);
+    }
+
+    .quiz-options {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+
+    .quiz-option {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 16px 20px;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      transition: all var(--transition);
+    }
+
+    .quiz-option:hover {
+      border-color: var(--accent);
+      background: rgba(201, 146, 58, 0.04);
+    }
+
+    .quiz-option.selected {
+      border-color: var(--primary);
+      background: rgba(75, 31, 15, 0.04);
+    }
+
+    .quiz-option-letter {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--bg-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.85rem;
+      flex-shrink: 0;
+      color: var(--primary);
+    }
+
+    .quiz-actions {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .quiz-result {
+      text-align: center;
+    }
+
+    .quiz-score-circle {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 2rem;
+      font-weight: 800;
+      font-family: var(--font-heading);
+      margin: 0 auto 24px;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .quiz-result-title {
+      font-size: 1.6rem;
+      margin-bottom: 12px;
+    }
+
+    .quiz-result-desc {
+      font-size: 0.95rem;
+      color: var(--text-body);
+      margin-bottom: 28px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .quiz-lead-form {
+      background: var(--cream);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      border: 1px solid var(--cream-dark);
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    /* === RESPONSIVE === */
+    @media (max-width: 1200px) {
+
+      .practice-grid,
+      .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+      }
+
+      .about-img {
+        height: 360px;
+      }
+
+      .about-img-badge {
+        bottom: 16px;
+        right: 16px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        padding: 92px 0 56px;
+        min-height: auto;
+      }
+
+      .hero h1 {
+        font-size: clamp(1.9rem, 7vw, 2.8rem);
+      }
+
+      .hero-desc {
+        font-size: 0.95rem;
+      }
+
+      .hero-slider {
+        min-height: 240px;
+      }
+
+      .hero-content {
+        max-width: 100%;
+      }
+
+      .hero-scroll {
+        display: none;
+      }
+
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+
+      .stat-num {
+        font-size: 2.4rem;
+      }
+
+      .practice-grid,
+      .why-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-img {
+        height: 280px;
+      }
+
+      .quiz-container {
+        padding: 40px 30px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero {
+        padding: 90px 0 50px;
+      }
+
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .hero-actions .btn {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .hero-badge {
+        font-size: 0.65rem;
+        padding: 6px 12px;
+      }
+
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+      }
+
+      .stat-num {
+        font-size: 2rem;
+      }
+
+      .practice-card {
+        padding: 28px 20px;
+      }
+
+      .trust-badge {
+        font-size: 0.95rem;
+      }
+
+      .trust-badge svg {
+        width: 28px;
+        height: 28px;
+      }
+
+      .quiz-container {
+        padding: 28px 20px;
+      }
+
+      .quiz-options {
+        gap: 10px;
+      }
+    }
+
+    @media (hover: none) {
+
+      .practice-card:hover,
+      .why-card:hover {
+        transform: none;
+      }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LegalService",
+        "name": "Shan Ali — FinTech & Blockchain Legal Counsel",
+        "description": "Specialized legal services in FinTech Law, Blockchain Regulation, DeFi Compliance, and Corporate Law.",
+        "url": "https://waleedcojuris.com/",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Islamabad",
+          "addressCountry": "PK"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 33.6844,
+          "longitude": 73.0479
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "18:00"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/shan-ali-blockchain/"
+        ]
+      },
+      {
+        "@type": "Person",
+        "name": "Shan Ali",
+        "jobTitle": "FinTech & Blockchain Legal Counsel",
+        "knowsAbout": ["Blockchain Law", "FinTech Regulation", "DeFi Compliance", "Corporate Law", "International Law"],
+        "description": "PhD Fellow in Blockchain Law and licensed attorney at Islamabad High Court.",
+        "sameAs": [
+          "https://www.linkedin.com/in/shan-ali-blockchain/"
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- PAGE LOADER -->
+  <div id="page-loader" class="page-loader">
+    <div class="juggling-loader">
+      <div class="juggling-dot"></div>
+      <div class="juggling-dot"></div>
+      <div class="juggling-dot"></div>
+    </div>
+  </div>
+
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo glitch-logo">
+          <div class="logo-shield">S</div>
+          <div class="logo-text">
+            <div class="logo-name">
+              <span>SHAN ALI</span>
+              <span class="glitch-layer" aria-hidden="true">SHAN ALI</span>
+              <span class="glitch-layer" aria-hidden="true">SHAN ALI</span>
+            </div>
+            <div class="logo-tagline">FinTech &amp; Blockchain Legal Counsel</div>
+          </div>
+        </a>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="pages/about.html" class="nav-link">About Me</a></li>
+            <li class="has-mega">
+              <a href="pages/practice-areas.html" class="nav-link">Practice Areas ▾</a>
+              <div class="mega-menu">
+                <div class="mega-col">
+                  <h4>Digital Law</h4>
+                  <a href="pages/practice-areas.html" class="mega-link">FinTech &amp; Blockchain Law</a>
+                  <a href="pages/practice-areas.html" class="mega-link">DeFi &amp; Digital Assets</a>
+                  <a href="pages/practice-areas.html" class="mega-link">AML / KYC Compliance</a>
+                </div>
+                <div class="mega-col">
+                  <h4>General Practice</h4>
+                  <a href="pages/practice-areas.html" class="mega-link">Corporate Law</a>
+                  <a href="pages/practice-areas.html" class="mega-link">Civil Litigation</a>
+                  <a href="pages/practice-areas.html" class="mega-link">Criminal Law</a>
+                </div>
+              </div>
+            </li>
+            <li><a href="pages/international.html" class="nav-link">Research</a></li>
+            <li><a href="pages/publications.html" class="nav-link">Publications</a></li>
+            <li><a href="pages/education.html" class="nav-link">Education</a></li>
+            <li><a href="pages/conferences.html" class="nav-link">Conferences</a></li>
+            <li><a href="pages/gallery.html" class="nav-link">Gallery</a></li>
+            <li><a href="pages/courses.html" class="nav-link">Courses</a></li>
+            <li><a href="pages/contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" class="mobile-menu-link">Home</a>
+    <a href="pages/about.html" class="mobile-menu-link">About Me</a>
+    <a href="pages/practice-areas.html" class="mobile-menu-link">Practice Areas</a>
+    <a href="pages/international.html" class="mobile-menu-link">Research</a>
+    <a href="pages/publications.html" class="mobile-menu-link">Publications</a>
+    <a href="pages/education.html" class="mobile-menu-link">Education</a>
+    <a href="pages/conferences.html" class="mobile-menu-link">Conferences</a>
+    <a href="pages/gallery.html" class="mobile-menu-link">Gallery</a>
+    <a href="pages/courses.html" class="mobile-menu-link">Courses</a>
+    <a href="pages/contact.html" class="mobile-menu-link">Contact</a>
+  </div>
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">⚖ Islamabad High Court Bar Associate</div>
+
+        <!-- Slider -->
+        <div class="hero-slider">
+          <div class="hero-slide active">
+            <h1>Navigating the<br /><span>Future of Law</span> — FinTech &amp; Blockchain</h1>
+            <p class="hero-desc">PhD Fellow in Blockchain Law. Expert legal counsel in DeFi, digital assets, Web3
+              compliance, and cross-border regulatory frameworks.</p>
+          </div>
+          <div class="hero-slide">
+            <h1>Corporate &amp; Commercial<br /><span>Legal Expertise</span> in Pakistan</h1>
+            <p class="hero-desc">Licensed attorney before the Islamabad High Court. Advising businesses, startups, and
+              institutions on corporate law, AML compliance, and FinTech regulation.</p>
+          </div>
+          <div class="hero-slide">
+            <h1>Scholarly Research &amp;<br /><span>International</span> Perspective</h1>
+            <p class="hero-desc">13+ peer-reviewed publications. Research Fellowships at University of Zurich &amp;
+              visiting researcher at institutions across Europe — bringing global insight to every case.</p>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+
+          <a href="pages/contact.html" class="btn btn-accent">📅 Book A Consultation</a>
+          <a href="pages/about.html" class="btn btn-outline">Learn More →</a>
+        </div>
+
+        <div class="hero-dots">
+          <button class="hero-dot active" aria-label="Slide 1"></button>
+          <button class="hero-dot" aria-label="Slide 2"></button>
+          <button class="hero-dot" aria-label="Slide 3"></button>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="hero-scroll-line"></div>
+      Scroll
+    </div>
+  </section>
+
+  <!-- ═══════════ TRUST BADGES ═══════════ -->
+  <section class="marquee-container" aria-label="Trust Badges">
+    <div class="marquee-content">
+      <div class="trust-badge">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" fill="none" />
+        </svg>
+        <span>Islamabad High Court Bar Associate</span>
+      </div>
+      <div class="trust-badge">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" fill="none" />
+        </svg>
+        <span>PhD Fellow — Blockchain Law</span>
+      </div>
+      <div class="trust-badge">
+        <svg viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none" />
+          <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            fill="none" />
+        </svg>
+        <span>UZH Research Fellow — Blockchain DLT &amp; Law</span>
+      </div>
+      <div class="trust-badge">
+        <svg viewBox="0 0 24 24">
+          <polygon
+            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+        </svg>
+        <span>Summa Cum Laude — LL.M.</span>
+      </div>
+      <div class="trust-badge">
+        <svg viewBox="0 0 24 24">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+          <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" fill="none" />
+        </svg>
+        <span>13+ Peer-Reviewed Publications</span>
+      </div>
+      <!-- Duplicated for seamless loop -->
+      <div class="trust-badge">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" fill="none" />
+        </svg>
+        <span>Islamabad High Court Bar Associate</span>
+      </div>
+      <div class="trust-badge">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" fill="none" />
+        </svg>
+        <span>PhD Fellow — Blockchain Law</span>
+      </div>
+      <div class="trust-badge">
+        <svg viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none" />
+          <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            fill="none" />
+        </svg>
+        <span>UZH Research Fellow — Blockchain DLT &amp; Law</span>
+      </div>
+      <div class="trust-badge">
+        <svg viewBox="0 0 24 24">
+          <polygon
+            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+        </svg>
+        <span>Summa Cum Laude — LL.M.</span>
+      </div>
+      <div class="trust-badge">
+        <svg viewBox="0 0 24 24">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+          <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" fill="none" />
+        </svg>
+        <span>13+ Peer-Reviewed Publications</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ ABOUT ═══════════ -->
+  <section class="about section-pad">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img-wrap reveal">
+          <img loading="lazy" src="./images/llm_gold_new_2.jpg" alt="Shan Ali — FinTech &amp; Blockchain Legal Counsel"
+            class="about-img" />
+          <div class="about-img-badge">
+            <span class="about-img-badge-num">6+</span>
+            <span class="about-img-badge-text">Years of<br />Excellence</span>
+          </div>
+        </div>
+        <div class="about-content reveal reveal-delay-2">
+          <span class="section-label">About</span>
+          <h2 class="about-title">Meet <span>Shan Ali</span>,<br />Blockchain &amp; FinTech Legal Counsel</h2>
+          <p class="about-text">Shan Ali is a distinguished legal professional specialising in FinTech, Web3, and
+            Blockchain Law. He is a PhD Fellow in Blockchain Law, licensed attorney before the Islamabad High Court, and
+            a prolific scholar with over 13 peer-reviewed publications in leading international journals.</p>
+          <blockquote class="about-quote">"The intersection of technology and law is not a challenge — it is an
+            opportunity to build a more equitable digital future."</blockquote>
+          <p class="about-text">With experience spanning Anti-Money Laundering (AML), DeFi compliance, cross-border
+            corporate law, and international research fellowships at institutions across Europe, Shan Ali brings a truly
+            global perspective to every legal matter.</p>
+          <ul class="about-list">
+            <li>Islamabad High Court Bar Associate</li>
+            <li>Islamabad Bar Council Member</li>
+            <li>PhD Fellow in Blockchain Law (Ongoing)</li>
+            <li>LL.M. — Summa Cum Laude</li>
+            <li>Research Fellow — University of Zurich (UZH)</li>
+          </ul>
+          <a href="pages/about.html" class="btn btn-primary">Full Profile →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ STATISTICS ═══════════ -->
+
+
+  <!-- ═══════════ PRACTICE AREAS PREVIEW ═══════════ -->
+  <section class="practice section-pad">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-label">What I Do</span>
+        <h2 class="section-title">Practice Areas</h2>
+        <p class="section-subtitle">Comprehensive legal expertise spanning digital assets, FinTech regulation, corporate
+          law, and international compliance.</p>
+        <div class="divider"></div>
+      </div>
+      <div class="practice-grid" style="margin-top:52px;">
+        <div class="practice-card reveal">
+          <div class="practice-icon">&#128279;</div>
+          <h3>FinTech &amp; Blockchain Law</h3>
+          <p>Expert legal advice on blockchain technology, smart contracts, DeFi protocols, digital asset regulation,
+            and cryptocurrency compliance frameworks.</p>
+          <span class="practice-link">Read More</span>
+        </div>
+        <div class="practice-card reveal reveal-delay-1">
+          <div class="practice-icon">🏢</div>
+          <h3>Corporate &amp; Commercial Law</h3>
+          <p>Full-spectrum corporate legal services: company formation, shareholder disputes, M&amp;A advisory,
+            regulatory compliance, and commercial contracts.</p>
+          <span class="practice-link">Read More</span>
+        </div>
+        <div class="practice-card reveal reveal-delay-2">
+          <div class="practice-icon">🛡️</div>
+          <h3>AML / KYC &amp; Compliance</h3>
+          <p>Anti-money laundering officer (MLRO) services, KYC framework design, compliance audits, and regulatory
+            reporting under FinTech and AML legislation.</p>
+          <span class="practice-link">Read More</span>
+        </div>
+        <div class="practice-card reveal reveal-delay-1">
+          <div class="practice-icon">⚖️</div>
+          <h3>Civil Litigation</h3>
+          <p>Expert representation in civil disputes including contract matters, property conflicts, tort claims, and
+            declaratory suits before Pakistan's courts.</p>
+          <span class="practice-link">Read More</span>
+        </div>
+        <div class="practice-card reveal reveal-delay-2">
+          <div class="practice-icon">🌍</div>
+          <h3>International &amp; Cross-Border Law</h3>
+          <p>Cross-border legal expertise in international arbitration, foreign arbitral awards, bilateral investment
+            treaties, and multi-jurisdictional corporate compliance.</p>
+          <span class="practice-link">Read More</span>
+        </div>
+        <div class="practice-card reveal reveal-delay-3">
+          <div class="practice-icon">🔐</div>
+          <h3>Cybersecurity &amp; Digital Rights</h3>
+          <p>Legal advisory on cyber warfare, digital self-defense law, cybercrime under PECA, data privacy, and
+            AI-related legal challenges.</p>
+          <span class="practice-link">Read More</span>
+        </div>
+      </div>
+      <div class="text-center" style="margin-top:48px;">
+        <a href="pages/practice-areas.html" class="btn btn-outline-dark">View All Practice Areas →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ WHY CHOOSE ME ═══════════ -->
+  <section class="why section-pad">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-label">Why Choose Me</span>
+        <h2 class="section-title">Excellence You Can Trust</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="why-grid" style="margin-top:52px;">
+        <div class="why-card reveal">
+          <div class="why-icon">🎓</div>
+          <h3>PhD-Level Expertise</h3>
+          <p>Currently pursuing a PhD in Blockchain Law with a focus on DAOs, digital governance, and regulatory reform
+            in Italy and Pakistan.</p>
+        </div>
+        <div class="why-card reveal reveal-delay-1">
+          <div class="why-icon">🌐</div>
+          <h3>International Research Background</h3>
+          <p>Research fellowships at University of Zurich and visiting researcher at institutions in the UK, Italy, and
+            Germany — bringing global legal insights.</p>
+        </div>
+        <div class="why-card reveal reveal-delay-2">
+          <div class="why-icon">📚</div>
+          <h3>Prolific Scholar</h3>
+          <p>13+ peer-reviewed publications in international journals covering blockchain, AI law, cyber warfare,
+            corporate governance, and arbitration.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-icon">⚡</div>
+          <h3>Tech-Forward Legal Thinking</h3>
+          <p>Specialization in emerging legal areas — DeFi, NFTs, metaverse law, AI legislation — ensuring you get
+            cutting-edge legal advice.</p>
+        </div>
+        <div class="why-card reveal reveal-delay-1">
+          <div class="why-icon">🤝</div>
+          <h3>Client-First Approach</h3>
+          <p>From individual disputes to corporate mandates, every client receives personalized, strategic legal counsel
+            tailored to their specific needs.</p>
+        </div>
+        <div class="why-card reveal reveal-delay-2">
+          <div class="why-icon">🔒</div>
+          <h3>Strict Confidentiality</h3>
+          <p>Your information is protected by the highest standards of attorney-client privilege and professional
+            confidentiality.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════ CTA BANNER ═══════════ -->
+  <section
+    style="background:linear-gradient(135deg,var(--primary-dark),var(--primary));padding:70px 0;text-align:center;">
+    <div class="container reveal">
+      <h2 style="color:#fff;font-size:clamp(1.6rem,3vw,2.4rem);margin-bottom:16px;">Ready to Discuss Your Legal Matter?
+      </h2>
+      <p style="color:rgba(255,255,255,0.75);margin-bottom:36px;font-size:1.05rem;">Get a free initial consultation in
+        FinTech Law, Blockchain Compliance, Corporate Law, or any legal matter. I'm here to help.</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+
+        <a href="pages/contact.html" class="btn btn-accent">Book Free Consultation</a>
+        <a href="https://www.linkedin.com/in/shan-ali-blockchain/" class="btn btn-outline" target="_blank">&#128279;
+          LinkedIn
+          Profile</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-shield">S</div>
+          <div class="footer-logo-name">SHAN ALI</div>
+          <p class="footer-desc">FinTech, Web3 &amp; Corporate Legal Counsel — PhD Fellow in Blockchain Law — providing
+            expert legal services in Pakistan and internationally.</p>
+          <div class="social-links" style="margin-top:24px;">
+            <a href="https://www.linkedin.com/in/shan-ali-blockchain/" class="social-link" aria-label="LinkedIn"
+              target="_blank">in</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html" class="footer-link">Home</a>
+            <a href="pages/about.html" class="footer-link">About Me</a>
+            <a href="pages/practice-areas.html" class="footer-link">Practice Areas</a>
+            <a href="pages/education.html" class="footer-link">Education & Achievements</a>
+            <a href="pages/conferences.html" class="footer-link">Conferences</a>
+            <a href="pages/international.html" class="footer-link">International & Research</a>
+            <a href="pages/publications.html" class="footer-link">Publications</a>
+            <a href="pages/gallery.html" class="footer-link">Gallery</a>
+            <a href="pages/courses.html" class="footer-link">Courses</a>
+            <a href="pages/contact.html" class="footer-link">Contact</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Courts &amp; Affiliations</h4>
+          <div class="footer-links">
+            <a href="https://www.supremecourt.gov.pk" target="_blank" class="footer-link">Supreme Court of Pakistan</a>
+            <a href="#" class="footer-link">Islamabad High Court</a>
+            <a href="#" class="footer-link">Islamabad Bar Council</a>
+            <a href="#" class="footer-link">Islamabad High Court Bar Association</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">&#128205;</span>
+            <span>Islamabad, Pakistan</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">&#128279;</span>
+            <a href="https://www.linkedin.com/in/shan-ali-blockchain/" style="color:inherit;"
+              target="_blank">LinkedIn</a>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">&#9993;</span>
+            <a href="mailto:drusmanka00786@gmail.com" style="color:inherit;">drusmanka00786@gmail.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Shan Ali. FinTech &amp; Blockchain Legal Counsel. All rights reserved.</span>
+        <span>Islamabad, Pakistan</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/tilt.js"></script>
+</body>
+
+</html>
