@@ -8,9 +8,8 @@
     <meta name="description"
         content="Academic background, honours, certifications, and skills of Shan Ali — PhD Fellow in Blockchain Law, LL.M. Summa Cum Laude, Gold Medalist, and licensed attorney." />
     <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="icon"
-        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖</text></svg>" />
-  <script type="application/ld+json">
+     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
@@ -70,7 +69,7 @@
         </div>
     </div>
 
-<header class="header" id="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header-inner">
                 <a href="../index.html" class="logo glitch-logo">
@@ -86,35 +85,53 @@
                 </a>
                 <nav>
                     <ul class="nav-list">
-                        <li><a href="../index.html" class="nav-link">Home</a></li>
-                        <li><a href="about.html" class="nav-link">About Me</a></li>
-                        <li><a href="practice-areas.html" class="nav-link">Practice Areas</a></li>
-                        <li><a href="international.html" class="nav-link">Research</a></li>
-                        <li><a href="publications.html" class="nav-link">Publications</a></li>
-                        <li><a href="education.html" class="nav-link">Education</a></li>
-                        <li><a href="conferences.html" class="nav-link active">Conferences</a></li>
-                        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
-                        <li><a href="courses.html" class="nav-link">Courses</a></li>
-                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                        <li><a href="../index.html" class="nav-link" data-i18n="nav-home">Home</a></li>
+                        <li><a href="about.html" class="nav-link" data-i18n="nav-about">About Me</a></li>
+                        <li class="has-mega">
+                            <a href="practice-areas.html" class="nav-link" data-i18n="nav-practice">Practice Areas</a>
+                            <div class="mega-menu">
+                                <div class="mega-col">
+                                    <h4 data-i18n="mega-digital">Digital Law</h4>
+                                    <a href="fintech-blockchain.html" class="mega-link">FinTech &amp; Blockchain Law</a>
+                                    <a href="defi-digital-assets.html" class="mega-link">DeFi &amp; Digital Assets</a>
+                                    <a href="aml-kyc-compliance.html" class="mega-link">AML / KYC Compliance</a>
+                                </div>
+                                <div class="mega-col">
+                                    <h4 data-i18n="mega-general">General Practice</h4>
+                                    <a href="corporate-law.html" class="mega-link">Corporate Law</a>
+                                    <a href="civil-litigation.html" class="mega-link">Civil Litigation</a>
+                                    <a href="criminal-law.html" class="mega-link">Criminal Law</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="international.html" class="nav-link" data-i18n="nav-research">Research</a></li>
+                        <li><a href="publications.html" class="nav-link" data-i18n="nav-publications">Publications</a>
+                        </li>
+                        <li><a href="education.html" class="nav-link" data-i18n="nav-education">Education</a></li>
+                        <li><a href="conferences.html" class="nav-link active"
+                                data-i18n="nav-conferences">Conferences</a></li>
+                        <li><a href="gallery.html" class="nav-link" data-i18n="nav-gallery">Gallery</a></li>
+                        <li><a href="courses.html" class="nav-link" data-i18n="nav-courses">Courses</a></li>
+                        <li><a href="contact.html" class="nav-link" data-i18n="nav-contact">Contact</a></li>
                     </ul>
                 </nav>
-                                <button class="hamburger" id="hamburger" aria-label="Menu">
+                <button class="hamburger" id="hamburger" aria-label="Menu">
                     <span></span><span></span><span></span>
                 </button>
             </div>
         </div>
     </header>
     <div class="mobile-menu" id="mobileMenu">
-        <a href="../index.html" class="mobile-menu-link">Home</a>
-        <a href="about.html" class="mobile-menu-link">About Me</a>
-        <a href="practice-areas.html" class="mobile-menu-link">Practice Areas</a>
-        <a href="international.html" class="mobile-menu-link">Research</a>
-        <a href="publications.html" class="mobile-menu-link">Publications</a>
-        <a href="education.html" class="mobile-menu-link">Education</a>
-        <a href="conferences.html" class="mobile-menu-link">Conferences</a>
-        <a href="gallery.html" class="mobile-menu-link">Gallery</a>
-        <a href="courses.html" class="mobile-menu-link">Courses</a>
-        <a href="contact.html" class="mobile-menu-link">Contact</a>
+        <a href="../index.html" class="mobile-menu-link" data-i18n="nav-home">Home</a>
+        <a href="about.html" class="mobile-menu-link" data-i18n="nav-about">About Me</a>
+        <a href="practice-areas.html" class="mobile-menu-link" data-i18n="nav-practice">Practice Areas</a>
+        <a href="international.html" class="mobile-menu-link" data-i18n="nav-research">Research</a>
+        <a href="publications.html" class="mobile-menu-link" data-i18n="nav-publications">Publications</a>
+        <a href="education.html" class="mobile-menu-link" data-i18n="nav-education">Education</a>
+        <a href="conferences.html" class="mobile-menu-link" data-i18n="nav-conferences">Conferences</a>
+        <a href="gallery.html" class="mobile-menu-link" data-i18n="nav-gallery">Gallery</a>
+        <a href="courses.html" class="mobile-menu-link" data-i18n="nav-courses">Courses</a>
+        <a href="contact.html" class="mobile-menu-link" data-i18n="nav-contact">Contact</a>
     </div>
 
     <!-- PAGE HERO -->
@@ -142,7 +159,7 @@
             <!-- Vertical cards wrapper -->
             <div style="display:flex;flex-direction:column;gap:20px;max-width:900px;margin:0 auto;">
 
-                <!-- ══ CARD 1: Completion Post ══ -->
+                <!--  CARD 1: Completion Post  -->
                 <div class="reveal"
                     style="background:var(--white);border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08);border:1px solid var(--border);">
                     <!-- Header (always visible) -->
@@ -171,7 +188,7 @@
                         <button onclick="toggleCard('conf1')" id="conf1Btn"
                             style="background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);color:#fff;padding:8px 22px;border-radius:50px;font-size:0.82rem;font-weight:700;cursor:pointer;transition:all 0.25s;"
                             onmouseover="this.style.background='rgba(201,146,58,0.3)'"
-                            onmouseout="this.style.background='rgba(255,255,255,0.12)'">▼ View Details</button>
+                            onmouseout="this.style.background='rgba(255,255,255,0.12)'"> View Details</button>
                     </div>
                     <!-- Expandable body -->
                     <div id="conf1"
@@ -189,7 +206,7 @@
                                 <div>
                                     <h4
                                         style="font-size:0.9rem;font-weight:700;color:var(--primary);margin-bottom:10px;">
-                                        🎓 Programme Overview</h4>
+                                        Programme Overview</h4>
                                     <p
                                         style="font-size:0.85rem;color:var(--text-body);line-height:1.8;margin-bottom:10px;">
                                         A rigorously interdisciplinary programme combining <strong>philosophy, law,
@@ -202,14 +219,15 @@
                                         from the start."</blockquote>
                                     <div
                                         style="background:var(--cream);border-radius:8px;padding:10px 14px;font-size:0.78rem;color:var(--text-muted);border:1px solid var(--cream-dark);">
-                                        🏅 <strong style="color:var(--primary);">Funded by NAWA</strong> — Polish
+                                        <strong style="color:var(--primary);">Funded by NAWA</strong> — Polish
                                         National Agency for Academic Exchange, under the <em>Spinaker</em> programme,
-                                        co-financed by the EU (2021–2027).</div>
+                                        co-financed by the EU (2021–2027).
+                                    </div>
                                 </div>
                                 <div>
                                     <h4
                                         style="font-size:0.9rem;font-weight:700;color:var(--primary);margin-bottom:10px;">
-                                        👨‍🏫 Distinguished Faculty</h4>
+                                        ‍ Distinguished Faculty</h4>
                                     <div style="display:flex;flex-direction:column;gap:6px;">
                                         <div
                                             style="padding:7px 11px;background:var(--bg-light);border-radius:7px;border-left:3px solid var(--accent);font-size:0.78rem;">
@@ -269,7 +287,7 @@
                     </div>
                 </div>
 
-                <!-- ══ CARD 2: Arrival Post ══ -->
+                <!--  CARD 2: Arrival Post  -->
                 <div class="reveal"
                     style="background:var(--white);border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08);border:1px solid var(--border);">
                     <!-- Header (always visible) -->
@@ -286,7 +304,7 @@
                             <div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;">
                                 <span
                                     style="background:rgba(201,146,58,0.2);border:1px solid rgba(201,146,58,0.4);color:var(--accent);padding:2px 10px;border-radius:50px;font-size:0.68rem;font-weight:700;">Winter
-                                    in Warsaw ❄️</span>
+                                    in Warsaw ️</span>
                                 <span
                                     style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.85);padding:2px 10px;border-radius:50px;font-size:0.68rem;font-weight:700;">SPINAKER
                                     Programme</span>
@@ -298,7 +316,7 @@
                         <button onclick="toggleCard('conf2')" id="conf2Btn"
                             style="background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);color:#fff;padding:8px 22px;border-radius:50px;font-size:0.82rem;font-weight:700;cursor:pointer;transition:all 0.25s;"
                             onmouseover="this.style.background='rgba(201,146,58,0.3)'"
-                            onmouseout="this.style.background='rgba(255,255,255,0.12)'">▼ View Details</button>
+                            onmouseout="this.style.background='rgba(255,255,255,0.12)'"> View Details</button>
                     </div>
                     <!-- Expandable body -->
                     <div id="conf2"
@@ -314,7 +332,7 @@
                                 style="width:100%;height:200px;object-fit:cover;" />
                         </div>
                         <div style="padding:24px 28px;">
-                            <h4 style="font-size:0.9rem;font-weight:700;color:var(--primary);margin-bottom:10px;">✈️
+                            <h4 style="font-size:0.9rem;font-weight:700;color:var(--primary);margin-bottom:10px;">️
                                 Programme Start</h4>
                             <p style="font-size:0.88rem;color:var(--text-body);line-height:1.8;margin-bottom:14px;">
                                 January begins in Poland, with snow all around, marking the start of the <strong>Winter
@@ -329,7 +347,7 @@
                                 the perspectives that come from an international academic setting."</blockquote>
                             <div
                                 style="background:var(--cream);border-radius:8px;padding:10px 14px;font-size:0.78rem;color:var(--text-muted);border:1px solid var(--cream-dark);">
-                                🏅 <strong style="color:var(--primary);">#SPINAKER Programme</strong> — organized by the
+                                <strong style="color:var(--primary);">#SPINAKER Programme</strong> — organized by the
                                 <strong style="color:var(--primary);">#Polish_National_Agency_for_Academic_Exchange
                                     (#NAWA)</strong>
                             </div>
@@ -338,7 +356,7 @@
                 </div>
 
 
-                <!-- ══ CARD 3: GBBC Ambassador 2026 ══ -->
+                <!--  CARD 3: GBBC Ambassador 2026  -->
                 <div class="reveal"
                     style="background:var(--white);border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08);border:1px solid var(--border);">
                     <!-- Header (always visible) -->
@@ -354,7 +372,7 @@
                                 2026 Cohort</h3>
                             <div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;">
                                 <span
-                                    style="background:rgba(201,146,58,0.2);border:1px solid rgba(201,146,58,0.4);color:var(--accent);padding:2px 10px;border-radius:50px;font-size:0.68rem;font-weight:700;">🇮🇹
+                                    style="background:rgba(201,146,58,0.2);border:1px solid rgba(201,146,58,0.4);color:var(--accent);padding:2px 10px;border-radius:50px;font-size:0.68rem;font-weight:700;">
                                     Representing Italy</span>
                                 <span
                                     style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.85);padding:2px 10px;border-radius:50px;font-size:0.68rem;font-weight:700;">Blockchain
@@ -367,7 +385,7 @@
                         <button onclick="toggleCard('conf3')" id="conf3Btn"
                             style="background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);color:#fff;padding:8px 22px;border-radius:50px;font-size:0.82rem;font-weight:700;cursor:pointer;transition:all 0.25s;"
                             onmouseover="this.style.background='rgba(201,146,58,0.3)'"
-                            onmouseout="this.style.background='rgba(255,255,255,0.12)'">▼ View Details</button>
+                            onmouseout="this.style.background='rgba(255,255,255,0.12)'"> View Details</button>
                     </div>
                     <!-- Expandable body -->
                     <div id="conf3"
@@ -380,7 +398,7 @@
                                 <div>
                                     <h4
                                         style="font-size:0.9rem;font-weight:700;color:var(--primary);margin-bottom:10px;">
-                                        🌐 About GBBC</h4>
+                                        About GBBC</h4>
                                     <p
                                         style="font-size:0.85rem;color:var(--text-body);line-height:1.8;margin-bottom:12px;">
                                         The <strong>Global Blockchain Business Council (GBBC)</strong> is a leading
@@ -396,7 +414,7 @@
                                 <div>
                                     <h4
                                         style="font-size:0.9rem;font-weight:700;color:var(--primary);margin-bottom:10px;">
-                                        📌 Role &amp; Focus</h4>
+                                         Role &amp; Focus</h4>
                                     <div style="display:flex;flex-direction:column;gap:8px;">
                                         <div
                                             style="padding:10px 13px;background:var(--bg-light);border-radius:8px;border-left:3px solid var(--accent);font-size:0.82rem;">
@@ -406,7 +424,7 @@
                                         <div
                                             style="padding:10px 13px;background:var(--bg-light);border-radius:8px;border-left:3px solid var(--accent);font-size:0.82rem;">
                                             <strong style="color:var(--primary);">Representation</strong><br />
-                                            <span style="color:var(--text-body);">🇮🇹 Italy — Blockchain, DeFi &amp;
+                                            <span style="color:var(--text-body);"> Italy — Blockchain, DeFi &amp;
                                                 Financial Regulation</span>
                                         </div>
                                         <div
@@ -430,7 +448,7 @@
                 </div>
 
 
-                <!-- ══ CARD 4: University of Zurich Visiting PhD Research ══ -->
+                <!--  CARD 4: University of Zurich Visiting PhD Research  -->
                 <div class="reveal"
                     style="background:var(--white);border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08);border:1px solid var(--border);">
                     <!-- Header (always visible) -->
@@ -446,7 +464,7 @@
                                 DeFi Legal Research — UZH</h3>
                             <div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;">
                                 <span
-                                    style="background:rgba(201,146,58,0.2);border:1px solid rgba(201,146,58,0.4);color:var(--accent);padding:2px 10px;border-radius:50px;font-size:0.68rem;font-weight:700;">🇨🇭
+                                    style="background:rgba(201,146,58,0.2);border:1px solid rgba(201,146,58,0.4);color:var(--accent);padding:2px 10px;border-radius:50px;font-size:0.68rem;font-weight:700;">
                                     Swiss-European Mobility</span>
                                 <span
                                     style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.85);padding:2px 10px;border-radius:50px;font-size:0.68rem;font-weight:700;">Blockchain
@@ -459,19 +477,20 @@
                         <button onclick="toggleCard('conf4')" id="conf4Btn"
                             style="background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);color:#fff;padding:8px 22px;border-radius:50px;font-size:0.82rem;font-weight:700;cursor:pointer;transition:all 0.25s;"
                             onmouseover="this.style.background='rgba(201,146,58,0.3)'"
-                            onmouseout="this.style.background='rgba(255,255,255,0.12)'">▼ View Details</button>
+                            onmouseout="this.style.background='rgba(255,255,255,0.12)'"> View Details</button>
                     </div>
                     <!-- Expandable body -->
                     <div id="conf4"
                         style="max-height:0;overflow:hidden;transition:max-height 0.55s cubic-bezier(0.4,0,0.2,1);">
-                        <img loading="lazy" src="../images/uzh_podium.png" alt="Shan Ali presenting at Universität Zürich"
+                        <img loading="lazy" src="../images/uzh_podium.png"
+                            alt="Shan Ali presenting at Universität Zürich"
                             style="width:100%;height:auto;display:block;" />
                         <div style="padding:24px 28px;">
                             <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px;">
                                 <div>
                                     <h4
                                         style="font-size:0.9rem;font-weight:700;color:var(--primary);margin-bottom:10px;">
-                                        🔬 Research Overview</h4>
+                                         Research Overview</h4>
                                     <p
                                         style="font-size:0.85rem;color:var(--text-body);line-height:1.8;margin-bottom:12px;">
                                         Visiting PhD Research at the <strong>University of Zurich — Faculty of
@@ -493,7 +512,7 @@
                                 <div>
                                     <h4
                                         style="font-size:0.9rem;font-weight:700;color:var(--primary);margin-bottom:10px;">
-                                        📚 Research Topics</h4>
+                                        Research Topics</h4>
                                     <div style="display:flex;flex-direction:column;gap:7px;">
                                         <div
                                             style="padding:8px 13px;background:var(--bg-light);border-radius:8px;border-left:3px solid var(--accent);font-size:0.82rem;">
@@ -518,7 +537,7 @@
                                             style="padding:8px 13px;background:var(--bg-light);border-radius:8px;border-left:3px solid var(--accent);font-size:0.82rem;">
                                             <strong style="color:var(--primary);">Institution</strong><br />
                                             <span style="color:var(--text-body);">University of Zurich — Faculty of Law
-                                                (UZH) 🇨🇭<br />Swiss-European Mobility Programme</span>
+                                                (UZH) <br />Swiss-European Mobility Programme</span>
                                         </div>
                                     </div>
                                 </div>
@@ -528,7 +547,7 @@
                 </div>
 
 
-                <!-- ══ CARD 5: EuroSSIG 2025 ══ -->
+                <!--  CARD 5: EuroSSIG 2025  -->
                 <div class="reveal"
                     style="background:var(--white);border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08);border:1px solid var(--border);">
                     <!-- Header (always visible) -->
@@ -539,7 +558,7 @@
                         <div>
                             <div
                                 style="font-size:0.65rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:5px;">
-                                EuroSSIG 2025 · Meissen, Germany 🇩🇪</div>
+                                EuroSSIG 2025 · Meissen, Germany </div>
                             <h3 style="color:#fff;font-size:1.15rem;margin:0 0 8px;line-height:1.2;">European Summer
                                 School on Internet Governance</h3>
                             <div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;">
@@ -557,14 +576,15 @@
                         <button onclick="toggleCard('conf5')" id="conf5Btn"
                             style="background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);color:#fff;padding:8px 22px;border-radius:50px;font-size:0.82rem;font-weight:700;cursor:pointer;transition:all 0.25s;"
                             onmouseover="this.style.background='rgba(201,146,58,0.3)'"
-                            onmouseout="this.style.background='rgba(255,255,255,0.12)'">▼ View Details</button>
+                            onmouseout="this.style.background='rgba(255,255,255,0.12)'"> View Details</button>
                     </div>
                     <!-- Expandable body -->
                     <div id="conf5"
                         style="max-height:0;overflow:hidden;transition:max-height 0.55s cubic-bezier(0.4,0,0.2,1);">
                         <!-- 3-photo strip -->
                         <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;">
-                            <img loading="lazy" src="../images/euro_meissen_lion.jpg" alt="Meissen Porcelain Lion sculptures"
+                            <img loading="lazy" src="../images/euro_meissen_lion.jpg"
+                                alt="Meissen Porcelain Lion sculptures"
                                 style="width:100%;height:200px;object-fit:cover;" />
                             <img loading="lazy" src="../images/euro_lecture.png" alt="dotBerlin gTLD lecture"
                                 style="width:100%;height:200px;object-fit:cover;" />
@@ -572,14 +592,14 @@
                                 style="width:100%;height:200px;object-fit:cover;" />
                         </div>
                         <!-- Meissen exhibit full width -->
-                        <img loading="lazy" src="../images/euro_porcelain.jpg" alt="MEISSEN Porcelain Manufactory exhibit"
-                            style="width:100%;height:auto;display:block;" />
+                        <img loading="lazy" src="../images/euro_porcelain.jpg"
+                            alt="MEISSEN Porcelain Manufactory exhibit" style="width:100%;height:auto;display:block;" />
                         <div style="padding:24px 28px;">
                             <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px;">
                                 <div>
                                     <h4
                                         style="font-size:0.9rem;font-weight:700;color:var(--primary);margin-bottom:10px;">
-                                        🌐 Programme Highlights</h4>
+                                        Programme Highlights</h4>
                                     <p
                                         style="font-size:0.85rem;color:var(--text-body);line-height:1.8;margin-bottom:12px;">
                                         At <strong>#EuroSSIG_2025</strong> in Germany, attended a thought-provoking
@@ -601,7 +621,7 @@
                                 <div>
                                     <h4
                                         style="font-size:0.9rem;font-weight:700;color:var(--primary);margin-bottom:10px;">
-                                        📌 Key Topics &amp; Speakers</h4>
+                                         Key Topics &amp; Speakers</h4>
                                     <div style="display:flex;flex-direction:column;gap:7px;">
                                         <div
                                             style="padding:8px 13px;background:var(--bg-light);border-radius:8px;border-left:3px solid var(--accent);font-size:0.82rem;">
@@ -626,7 +646,7 @@
                                             style="padding:8px 13px;background:var(--bg-light);border-radius:8px;border-left:3px solid var(--accent);font-size:0.82rem;">
                                             <strong style="color:var(--primary);">Cultural Visit</strong><br />
                                             <span style="color:var(--text-body);">MEISSEN® Porcelain Manufactory est.
-                                                1710 — a symbol of craftsmanship and innovation 🏺</span>
+                                                1710 — a symbol of craftsmanship and innovation </span>
                                         </div>
                                     </div>
                                 </div>
@@ -636,7 +656,7 @@
                 </div>
 
 
-                <!-- ══ CARD 6: EuroSSIG Fellow — 19th Edition ══ -->
+                <!--  CARD 6: EuroSSIG Fellow — 19th Edition  -->
                 <div class="reveal"
                     style="background:var(--white);border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08);border:1px solid var(--border);">
                     <div
@@ -646,12 +666,12 @@
                         <div>
                             <div
                                 style="font-size:0.65rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:5px;">
-                                19th EuroSSIG · Meissen, Germany 🇩🇪 · 2025</div>
+                                19th EuroSSIG · Meissen, Germany  · 2025</div>
                             <h3 style="color:#fff;font-size:1.15rem;margin:0 0 8px;line-height:1.2;">EuroSSIG Fellow —
                                 Internet Governance &amp; Digital Policy</h3>
                             <div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;">
                                 <span
-                                    style="background:rgba(201,146,58,0.2);border:1px solid rgba(201,146,58,0.4);color:var(--accent);padding:2px 10px;border-radius:50px;font-size:0.68rem;font-weight:700;">🎓
+                                    style="background:rgba(201,146,58,0.2);border:1px solid rgba(201,146,58,0.4);color:var(--accent);padding:2px 10px;border-radius:50px;font-size:0.68rem;font-weight:700;">Award
                                     Selected Fellow</span>
                                 <span
                                     style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.85);padding:2px 10px;border-radius:50px;font-size:0.68rem;font-weight:700;">ICANN
@@ -664,7 +684,7 @@
                         <button onclick="toggleCard('conf6')" id="conf6Btn"
                             style="background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);color:#fff;padding:8px 22px;border-radius:50px;font-size:0.82rem;font-weight:700;cursor:pointer;transition:all 0.25s;"
                             onmouseover="this.style.background='rgba(201,146,58,0.3)'"
-                            onmouseout="this.style.background='rgba(255,255,255,0.12)'">▼ View Details</button>
+                            onmouseout="this.style.background='rgba(255,255,255,0.12)'"> View Details</button>
                     </div>
                     <!-- Expandable body -->
                     <div id="conf6"
@@ -672,7 +692,8 @@
                         <div style="display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:start;">
                             <img loading="lazy" src="../images/euro6_session.png" alt="Shan Ali at EuroSSIG session"
                                 style="width:100%;height:auto;display:block;" />
-                            <img loading="lazy" src="../images/euro6_group.jpg" alt="EuroSSIG group photo at Meissen Cathedral"
+                            <img loading="lazy" src="../images/euro6_group.jpg"
+                                alt="EuroSSIG group photo at Meissen Cathedral"
                                 style="width:100%;height:auto;display:block;" />
                         </div>
                         <div style="padding:24px 28px;">
@@ -680,7 +701,7 @@
                                 <div>
                                     <h4
                                         style="font-size:0.9rem;font-weight:700;color:var(--primary);margin-bottom:10px;">
-                                        🎓 Fellow Experience</h4>
+                                        Fellow Experience</h4>
                                     <p
                                         style="font-size:0.85rem;color:var(--text-body);line-height:1.8;margin-bottom:12px;">
                                         Honoured to be selected as a <strong>#fellow</strong> at the <strong>19th
@@ -704,18 +725,18 @@
                                 <div>
                                     <h4
                                         style="font-size:0.9rem;font-weight:700;color:var(--primary);margin-bottom:10px;">
-                                        📚 Programme Curriculum</h4>
+                                        Programme Curriculum</h4>
                                     <div style="display:flex;flex-direction:column;gap:7px;">
                                         <div
                                             style="padding:8px 13px;background:var(--bg-light);border-radius:8px;border-left:3px solid var(--accent);font-size:0.8rem;">
-                                            <strong style="color:var(--primary);">🌍 Geopolitics &amp; Multistakeholder
+                                            <strong style="color:var(--primary);">Geopolitics &amp; Multistakeholder
                                                 Models</strong><br />
                                             <span style="color:var(--text-muted);font-size:0.75rem;">Vint Cerf ·
                                                 European Commission · ICANN · Global Partners Digital</span>
                                         </div>
                                         <div
                                             style="padding:8px 13px;background:var(--bg-light);border-radius:8px;border-left:3px solid var(--accent);font-size:0.8rem;">
-                                            <strong style="color:var(--primary);">🔗 Critical Internet
+                                            <strong style="color:var(--primary);"> Critical Internet
                                                 Resources</strong><br />
                                             <span style="color:var(--text-muted);font-size:0.75rem;">ICANN · DNS · IP
                                                 Addresses · Root Servers · ccTLDs &amp; gTLDs · DENIC · EURid ·
@@ -723,14 +744,14 @@
                                         </div>
                                         <div
                                             style="padding:8px 13px;background:var(--bg-light);border-radius:8px;border-left:3px solid var(--accent);font-size:0.8rem;">
-                                            <strong style="color:var(--primary);">🔒 Cybersecurity &amp; CERT
+                                            <strong style="color:var(--primary);"> Cybersecurity &amp; CERT
                                                 Operations</strong><br />
                                             <span style="color:var(--text-muted);font-size:0.75rem;">Internet Society ·
                                                 SWITCH/FIRST — strengthening global resilience</span>
                                         </div>
                                         <div
                                             style="padding:8px 13px;background:var(--bg-light);border-radius:8px;border-left:3px solid var(--accent);font-size:0.8rem;">
-                                            <strong style="color:var(--primary);">🤖 Emerging Tech &amp; Human
+                                            <strong style="color:var(--primary);"> Emerging Tech &amp; Human
                                                 Rights</strong><br />
                                             <span style="color:var(--text-muted);font-size:0.75rem;">AI · Quantum
                                                 Computing · Neurotechnology · Virtual Worlds — IEEE &amp; I&amp;J Policy
@@ -738,7 +759,7 @@
                                         </div>
                                         <div
                                             style="padding:8px 13px;background:var(--bg-light);border-radius:8px;border-left:3px solid var(--accent);font-size:0.8rem;">
-                                            <strong style="color:var(--primary);">📝 Hands-on WSIS+20
+                                            <strong style="color:var(--primary);"> Hands-on WSIS+20
                                                 Practicum</strong><br />
                                             <span style="color:var(--text-muted);font-size:0.75rem;">Drafting &amp;
                                                 defending policy inputs — turning ideas into actionable
@@ -747,7 +768,7 @@
                                     </div>
                                     <div
                                         style="margin-top:10px;padding:10px 13px;background:var(--cream);border-radius:8px;font-size:0.77rem;color:var(--text-muted);border:1px solid var(--cream-dark);">
-                                        🙏 <strong style="color:var(--primary);">Thanks to:</strong> Prof. Wolfgang
+                                         <strong style="color:var(--primary);">Thanks to:</strong> Prof. Wolfgang
                                         Kleinwaechter, Sandra Hoferichter, EuroSSIG faculty, EURid, dot.Berlin, Identity
                                         Digital &amp; Medienstadt Leipzig e.V.
                                     </div>
@@ -758,22 +779,23 @@
                 </div>
 
 
-                <!-- ══ CARD 7: European Blockchain Convention #EBC11 ══ -->
+                <!--  CARD 7: European Blockchain Convention #EBC11  -->
                 <div class="reveal"
                     style="background:var(--white);border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08);border:1px solid var(--border);">
                     <div
                         style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px;padding:22px 24px 18px;background:linear-gradient(135deg,#0066cc,#0099e6);">
-                        <img loading="lazy" src="../images/ebc11_attending.png" alt="European Blockchain Convention #EBC11"
+                        <img loading="lazy" src="../images/ebc11_attending.png"
+                            alt="European Blockchain Convention #EBC11"
                             style="width:90px;height:90px;object-fit:cover;object-position:top;border-radius:12px;border:2px solid rgba(255,255,255,0.5);" />
                         <div>
                             <div
                                 style="font-size:0.65rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#b3e0ff;margin-bottom:5px;">
-                                European Blockchain Convention · Barcelona, Spain 🇪🇸</div>
+                                European Blockchain Convention · Barcelona, Spain </div>
                             <h3 style="color:#fff;font-size:1.15rem;margin:0 0 8px;line-height:1.2;">European Blockchain
                                 Convention #EBC11 — 2025</h3>
                             <div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;">
                                 <span
-                                    style="background:rgba(255,255,255,0.2);border:1px solid rgba(255,255,255,0.4);color:#fff;padding:2px 10px;border-radius:50px;font-size:0.68rem;font-weight:700;">📅
+                                    style="background:rgba(255,255,255,0.2);border:1px solid rgba(255,255,255,0.4);color:#fff;padding:2px 10px;border-radius:50px;font-size:0.68rem;font-weight:700;">
                                     Oct 16–17, 2025</span>
                                 <span
                                     style="background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.25);color:rgba(255,255,255,0.9);padding:2px 10px;border-radius:50px;font-size:0.68rem;font-weight:700;">Blockchain
@@ -785,7 +807,7 @@
                         <button onclick="toggleCard('conf7')" id="conf7Btn"
                             style="background:rgba(255,255,255,0.15);border:1.5px solid rgba(255,255,255,0.4);color:#fff;padding:8px 22px;border-radius:50px;font-size:0.82rem;font-weight:700;cursor:pointer;transition:all 0.25s;"
                             onmouseover="this.style.background='rgba(255,255,255,0.3)'"
-                            onmouseout="this.style.background='rgba(255,255,255,0.15)'">▼ View Details</button>
+                            onmouseout="this.style.background='rgba(255,255,255,0.15)'"> View Details</button>
                     </div>
                     <!-- Expandable body -->
                     <div id="conf7"
@@ -798,7 +820,7 @@
                                 <div>
                                     <h4
                                         style="font-size:0.9rem;font-weight:700;color:var(--primary);margin-bottom:10px;">
-                                        🔗 About the Event</h4>
+                                         About the Event</h4>
                                     <p
                                         style="font-size:0.85rem;color:var(--text-body);line-height:1.8;margin-bottom:12px;">
                                         Attending the <strong>European Blockchain Convention #EBC11</strong> in
@@ -817,7 +839,7 @@
                                 <div>
                                     <h4
                                         style="font-size:0.9rem;font-weight:700;color:var(--primary);margin-bottom:10px;">
-                                        📌 Event Details</h4>
+                                         Event Details</h4>
                                     <div style="display:flex;flex-direction:column;gap:7px;">
                                         <div
                                             style="padding:8px 13px;background:var(--bg-light);border-radius:8px;border-left:3px solid #0099e6;font-size:0.82rem;">
@@ -829,7 +851,7 @@
                                             style="padding:8px 13px;background:var(--bg-light);border-radius:8px;border-left:3px solid #0099e6;font-size:0.82rem;">
                                             <strong style="color:var(--primary);">Date &amp; Location</strong><br />
                                             <span style="color:var(--text-body);">October 16–17, 2025 · Barcelona, Spain
-                                                🇪🇸</span>
+                                                </span>
                                         </div>
                                         <div
                                             style="padding:8px 13px;background:var(--bg-light);border-radius:8px;border-left:3px solid #0099e6;font-size:0.82rem;">
@@ -839,7 +861,7 @@
                                         </div>
                                         <div
                                             style="padding:8px 13px;background:var(--cream);border-radius:8px;border-left:3px solid #0099e6;font-size:0.82rem;border:1px solid var(--cream-dark);">
-                                            <strong style="color:var(--primary);">🎟️ Discount Code</strong><br />
+                                            <strong style="color:var(--primary);">️ Discount Code</strong><br />
                                             <span style="color:var(--text-body);">Use <strong
                                                     style="color:#0066cc;">jb5WqStj</strong> for 15% off
                                                 registration</span>
@@ -852,7 +874,7 @@
                 </div>
 
 
-                <!-- ══ CARD 8: UZH International Summer School — Deep Dive into Blockchain 2025 ══ -->
+                <!--  CARD 8: UZH International Summer School — Deep Dive into Blockchain 2025  -->
                 <div class="reveal"
                     style="background:var(--white);border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08);border:1px solid var(--border);">
                     <div
@@ -862,12 +884,12 @@
                         <div>
                             <div
                                 style="font-size:0.65rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:5px;">
-                                UZH International Summer School · Zürich, Switzerland 🇨🇭 · 2025</div>
+                                UZH International Summer School · Zürich, Switzerland  · 2025</div>
                             <h3 style="color:#fff;font-size:1.15rem;margin:0 0 8px;line-height:1.2;">Deep Dive into
                                 Blockchain 2025 — Teaching Assistant</h3>
                             <div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;">
                                 <span
-                                    style="background:rgba(201,146,58,0.2);border:1px solid rgba(201,146,58,0.4);color:var(--accent);padding:2px 10px;border-radius:50px;font-size:0.68rem;font-weight:700;">🎓
+                                    style="background:rgba(201,146,58,0.2);border:1px solid rgba(201,146,58,0.4);color:var(--accent);padding:2px 10px;border-radius:50px;font-size:0.68rem;font-weight:700;">
                                     Teaching Assistant</span>
                                 <span
                                     style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.85);padding:2px 10px;border-radius:50px;font-size:0.68rem;font-weight:700;">134
@@ -880,13 +902,14 @@
                         <button onclick="toggleCard('conf8')" id="conf8Btn"
                             style="background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);color:#fff;padding:8px 22px;border-radius:50px;font-size:0.82rem;font-weight:700;cursor:pointer;transition:all 0.25s;"
                             onmouseover="this.style.background='rgba(201,146,58,0.3)'"
-                            onmouseout="this.style.background='rgba(255,255,255,0.12)'">▼ View Details</button>
+                            onmouseout="this.style.background='rgba(255,255,255,0.12)'"> View Details</button>
                     </div>
                     <!-- Expandable body -->
                     <div id="conf8"
                         style="max-height:0;overflow:hidden;transition:max-height 0.55s cubic-bezier(0.4,0,0.2,1);">
                         <div style="display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:start;">
-                            <img loading="lazy" src="../images/uzh8_podium.png" alt="Shan Ali presenting at Universität Zürich"
+                            <img loading="lazy" src="../images/uzh8_podium.png"
+                                alt="Shan Ali presenting at Universität Zürich"
                                 style="width:100%;height:auto;display:block;" />
                             <img loading="lazy" src="../images/uzh8_group.png" alt="UZH Summer School 2025 group photo"
                                 style="width:100%;height:auto;display:block;" />
@@ -896,7 +919,7 @@
                                 <div>
                                     <h4
                                         style="font-size:0.9rem;font-weight:700;color:var(--primary);margin-bottom:10px;">
-                                        🏫 Summer School Overview</h4>
+                                         Summer School Overview</h4>
                                     <p
                                         style="font-size:0.85rem;color:var(--text-body);line-height:1.8;margin-bottom:12px;">
                                         From day one to the very last lecture, the
@@ -917,7 +940,7 @@
                                 <div>
                                     <h4
                                         style="font-size:0.9rem;font-weight:700;color:var(--primary);margin-bottom:10px;">
-                                        📌 Role &amp; Programme Details</h4>
+                                         Role &amp; Programme Details</h4>
                                     <div style="display:flex;flex-direction:column;gap:7px;">
                                         <div
                                             style="padding:8px 13px;background:var(--bg-light);border-radius:8px;border-left:3px solid var(--accent);font-size:0.82rem;">
@@ -935,11 +958,11 @@
                                             style="padding:8px 13px;background:var(--bg-light);border-radius:8px;border-left:3px solid var(--accent);font-size:0.82rem;">
                                             <strong style="color:var(--primary);">Institution</strong><br />
                                             <span style="color:var(--text-body);">University of Zurich (UZH) · UZH
-                                                Blockchain Center 🇨🇭</span>
+                                                Blockchain Center </span>
                                         </div>
                                         <div
                                             style="padding:8px 13px;background:var(--cream);border-radius:8px;border-left:3px solid var(--accent);font-size:0.8rem;border:1px solid var(--cream-dark);">
-                                            <strong style="color:var(--primary);">🙏 With gratitude to</strong><br />
+                                            <strong style="color:var(--primary);"> With gratitude to</strong><br />
                                             <span style="color:var(--text-muted);font-size:0.77rem;">Prof. <strong
                                                     style="color:var(--primary);">Claudio J. Tessone</strong>, Shengnan
                                                 Li, Parminder Kaur Makode (Pam) &amp; the entire UZH Blockchain Center
@@ -953,7 +976,7 @@
                 </div>
 
 
-                <!-- ══ CARD 9: UZH Blockchain Summer School — Week 3 Highlights ══ -->
+                <!--  CARD 9: UZH Blockchain Summer School — Week 3 Highlights  -->
                 <div class="reveal"
                     style="background:var(--white);border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08);border:1px solid var(--border);">
                     <div
@@ -981,7 +1004,7 @@
                         <button onclick="toggleCard('conf9')" id="conf9Btn"
                             style="background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);color:#fff;padding:8px 22px;border-radius:50px;font-size:0.82rem;font-weight:700;cursor:pointer;transition:all 0.25s;"
                             onmouseover="this.style.background='rgba(201,146,58,0.3)'"
-                            onmouseout="this.style.background='rgba(255,255,255,0.12)'">▼ View Details</button>
+                            onmouseout="this.style.background='rgba(255,255,255,0.12)'"> View Details</button>
                     </div>
                     <!-- Expandable body -->
                     <div id="conf9"
@@ -1007,7 +1030,7 @@
                                     style="background:var(--bg-light);border-radius:10px;padding:14px 16px;border-left:3px solid var(--accent);">
                                     <h4
                                         style="font-size:0.85rem;font-weight:700;color:var(--primary);margin-bottom:8px;">
-                                        ⚖️ Legal &amp; Regulatory</h4>
+                                        ️ Legal &amp; Regulatory</h4>
                                     <div style="display:flex;flex-direction:column;gap:6px;font-size:0.78rem;">
                                         <div
                                             style="padding:6px 10px;background:var(--white);border-radius:6px;border:1px solid var(--border);">
@@ -1030,7 +1053,7 @@
                                     style="background:var(--bg-light);border-radius:10px;padding:14px 16px;border-left:3px solid var(--accent);">
                                     <h4
                                         style="font-size:0.85rem;font-weight:700;color:var(--primary);margin-bottom:8px;">
-                                        🔒 Security &amp; Infrastructure</h4>
+                                         Security &amp; Infrastructure</h4>
                                     <div style="display:flex;flex-direction:column;gap:6px;font-size:0.78rem;">
                                         <div
                                             style="padding:6px 10px;background:var(--white);border-radius:6px;border:1px solid var(--border);">
@@ -1059,7 +1082,7 @@
                                     style="background:var(--bg-light);border-radius:10px;padding:14px 16px;border-left:3px solid var(--accent);">
                                     <h4
                                         style="font-size:0.85rem;font-weight:700;color:var(--primary);margin-bottom:8px;">
-                                        🚀 Frontier Projects</h4>
+                                         Frontier Projects</h4>
                                     <div style="display:flex;flex-direction:column;gap:6px;font-size:0.78rem;">
                                         <div
                                             style="padding:6px 10px;background:var(--white);border-radius:6px;border:1px solid var(--border);">
@@ -1091,7 +1114,7 @@
                 </div>
 
 
-                <!-- ══ CARD 10: Swiss National Bank Visit — UZH Deep Dive into Blockchain ══ -->
+                <!--  CARD 10: Swiss National Bank Visit — UZH Deep Dive into Blockchain  -->
                 <div class="reveal"
                     style="background:var(--white);border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08);border:1px solid var(--border);">
                     <div
@@ -1101,12 +1124,12 @@
                         <div>
                             <div
                                 style="font-size:0.65rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:5px;">
-                                Swiss National Bank (SNB) · Zürich, Switzerland 🇨🇭 · 2025</div>
+                                Swiss National Bank (SNB) · Zürich, Switzerland  · 2025</div>
                             <h3 style="color:#fff;font-size:1.15rem;margin:0 0 8px;line-height:1.2;">Visit to Swiss
                                 National Bank — DLT, Tokenisation &amp; Digital Finance</h3>
                             <div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;">
                                 <span
-                                    style="background:rgba(201,146,58,0.2);border:1px solid rgba(201,146,58,0.4);color:var(--accent);padding:2px 10px;border-radius:50px;font-size:0.68rem;font-weight:700;">🏦
+                                    style="background:rgba(201,146,58,0.2);border:1px solid rgba(201,146,58,0.4);color:var(--accent);padding:2px 10px;border-radius:50px;font-size:0.68rem;font-weight:700;">
                                     Swiss National Bank</span>
                                 <span
                                     style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.85);padding:2px 10px;border-radius:50px;font-size:0.68rem;font-weight:700;">DLT
@@ -1119,18 +1142,21 @@
                         <button onclick="toggleCard('conf10')" id="conf10Btn"
                             style="background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);color:#fff;padding:8px 22px;border-radius:50px;font-size:0.82rem;font-weight:700;cursor:pointer;transition:all 0.25s;"
                             onmouseover="this.style.background='rgba(201,146,58,0.3)'"
-                            onmouseout="this.style.background='rgba(255,255,255,0.12)'">▼ View Details</button>
+                            onmouseout="this.style.background='rgba(255,255,255,0.12)'"> View Details</button>
                     </div>
                     <!-- Expandable body -->
                     <div id="conf10"
                         style="max-height:0;overflow:hidden;transition:max-height 0.55s cubic-bezier(0.4,0,0.2,1);">
                         <!-- 3-photo strip -->
                         <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;">
-                            <img loading="lazy" src="../images/snb_dlt.png" alt="Thomas Moser — DLT for tokenized assets presentation"
+                            <img loading="lazy" src="../images/snb_dlt.png"
+                                alt="Thomas Moser — DLT for tokenized assets presentation"
                                 style="width:100%;height:200px;object-fit:cover;" />
-                            <img loading="lazy" src="../images/snb_audience.png" alt="Audience at SNB including Shan Ali"
+                            <img loading="lazy" src="../images/snb_audience.png"
+                                alt="Audience at SNB including Shan Ali"
                                 style="width:100%;height:200px;object-fit:cover;" />
-                            <img loading="lazy" src="../images/snb_group.png" alt="Group photo outside Swiss National Bank"
+                            <img loading="lazy" src="../images/snb_group.png"
+                                alt="Group photo outside Swiss National Bank"
                                 style="width:100%;height:200px;object-fit:cover;" />
                         </div>
                         <div style="padding:24px 28px;">
@@ -1138,7 +1164,7 @@
                                 <div>
                                     <h4
                                         style="font-size:0.9rem;font-weight:700;color:var(--primary);margin-bottom:10px;">
-                                        🏦 Visit Overview</h4>
+                                         Visit Overview</h4>
                                     <p
                                         style="font-size:0.85rem;color:var(--text-body);line-height:1.8;margin-bottom:12px;">
                                         Had the privilege of visiting the <strong>Swiss National Bank (SNB)</strong> as
@@ -1161,7 +1187,7 @@
                                 <div>
                                     <h4
                                         style="font-size:0.9rem;font-weight:700;color:var(--primary);margin-bottom:10px;">
-                                        📌 Key Topics Covered</h4>
+                                         Key Topics Covered</h4>
                                     <div style="display:flex;flex-direction:column;gap:7px;">
                                         <div
                                             style="padding:8px 13px;background:var(--bg-light);border-radius:8px;border-left:3px solid var(--accent);font-size:0.82rem;">
@@ -1192,7 +1218,7 @@
                 </div>
 
 
-                <!-- ══ CARD 11: Dr. Larisa Yarovaya — Survivability & Stability of Digital Assets ══ -->
+                <!--  CARD 11: Dr. Larisa Yarovaya — Survivability & Stability of Digital Assets  -->
                 <div class="reveal"
                     style="background:var(--white);border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08);border:1px solid var(--border);">
                     <div
@@ -1202,7 +1228,7 @@
                         <div>
                             <div
                                 style="font-size:0.65rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:5px;">
-                                UZH Blockchain Center · Zürich, Switzerland 🇨🇭 · 2025</div>
+                                UZH Blockchain Center · Zürich, Switzerland  · 2025</div>
                             <h3 style="color:#fff;font-size:1.1rem;margin:0 0 8px;line-height:1.25;">Survivability &amp;
                                 Stability of Digital Assets — Shaping Retail Crypto Adoption</h3>
                             <div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;">
@@ -1220,20 +1246,23 @@
                         <button onclick="toggleCard('conf11')" id="conf11Btn"
                             style="background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);color:#fff;padding:8px 22px;border-radius:50px;font-size:0.82rem;font-weight:700;cursor:pointer;transition:all 0.25s;"
                             onmouseover="this.style.background='rgba(201,146,58,0.3)'"
-                            onmouseout="this.style.background='rgba(255,255,255,0.12)'">▼ View Details</button>
+                            onmouseout="this.style.background='rgba(255,255,255,0.12)'"> View Details</button>
                     </div>
                     <!-- Expandable body -->
                     <div id="conf11"
                         style="max-height:0;overflow:hidden;transition:max-height 0.55s cubic-bezier(0.4,0,0.2,1);">
                         <!-- 4-photo strip -->
                         <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:0;">
-                            <img loading="lazy" src="../images/yar_lecture1.png" alt="Dr. Yarovaya presenting — wide hall view"
+                            <img loading="lazy" src="../images/yar_lecture1.png"
+                                alt="Dr. Yarovaya presenting — wide hall view"
                                 style="width:100%;height:180px;object-fit:cover;" />
-                            <img loading="lazy" src="../images/yar_lecture2.png" alt="Dr. Yarovaya presenting with moderator"
+                            <img loading="lazy" src="../images/yar_lecture2.png"
+                                alt="Dr. Yarovaya presenting with moderator"
                                 style="width:100%;height:180px;object-fit:cover;" />
                             <img loading="lazy" src="../images/yar_social1.png" alt="Networking event at UZH"
                                 style="width:100%;height:180px;object-fit:cover;" />
-                            <img loading="lazy" src="../images/yar_social2.png" alt="Networking event at UZH — wider view"
+                            <img loading="lazy" src="../images/yar_social2.png"
+                                alt="Networking event at UZH — wider view"
                                 style="width:100%;height:180px;object-fit:cover;" />
                         </div>
                         <div style="padding:24px 28px;">
@@ -1241,7 +1270,7 @@
                                 <div>
                                     <h4
                                         style="font-size:0.9rem;font-weight:700;color:var(--primary);margin-bottom:10px;">
-                                        📖 Lecture Overview</h4>
+                                         Lecture Overview</h4>
                                     <p
                                         style="font-size:0.85rem;color:var(--text-body);line-height:1.8;margin-bottom:12px;">
                                         Had the privilege of attending an outstanding talk by <strong>Dr. Larisa
@@ -1265,7 +1294,7 @@
                                 <div>
                                     <h4
                                         style="font-size:0.9rem;font-weight:700;color:var(--primary);margin-bottom:10px;">
-                                        📌 Key Topics</h4>
+                                         Key Topics</h4>
                                     <div style="display:flex;flex-direction:column;gap:7px;">
                                         <div
                                             style="padding:8px 13px;background:var(--bg-light);border-radius:8px;border-left:3px solid #9c1a50;font-size:0.82rem;">
@@ -1288,7 +1317,7 @@
                                             <strong style="color:var(--primary);">Speaker</strong><br />
                                             <span style="color:var(--text-body);">Dr. Larisa Yarovaya · Associate
                                                 Professor of Finance · Centre for Digital Finance · Southampton Business
-                                                School (UK) 🇬🇧</span>
+                                                School (UK) </span>
                                         </div>
                                         <div
                                             style="padding:8px 13px;background:var(--cream);border-radius:8px;border-left:3px solid #9c1a50;font-size:0.8rem;border:1px solid var(--cream-dark);">
@@ -1304,7 +1333,7 @@
                 </div>
 
 
-                <!-- ══ CARD 12: UZH Blockchain Summer School — Week 2 Highlights ══ -->
+                <!--  CARD 12: UZH Blockchain Summer School — Week 2 Highlights  -->
                 <div class="reveal"
                     style="background:var(--white);border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08);border:1px solid var(--border);">
                     <div
@@ -1332,7 +1361,7 @@
                         <button onclick="toggleCard('conf12')" id="conf12Btn"
                             style="background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);color:#fff;padding:8px 22px;border-radius:50px;font-size:0.82rem;font-weight:700;cursor:pointer;transition:all 0.25s;"
                             onmouseover="this.style.background='rgba(201,146,58,0.3)'"
-                            onmouseout="this.style.background='rgba(255,255,255,0.12)'">▼ View Details</button>
+                            onmouseout="this.style.background='rgba(255,255,255,0.12)'"> View Details</button>
                     </div>
                     <!-- Expandable body -->
                     <div id="conf12"
@@ -1359,7 +1388,7 @@
                                     style="background:var(--bg-light);border-radius:10px;padding:14px 16px;border-left:3px solid var(--accent);">
                                     <h4
                                         style="font-size:0.85rem;font-weight:700;color:var(--primary);margin-bottom:8px;">
-                                        💹 DeFi &amp; Stablecoins</h4>
+                                         DeFi &amp; Stablecoins</h4>
                                     <div style="display:flex;flex-direction:column;gap:6px;font-size:0.78rem;">
                                         <div
                                             style="padding:6px 10px;background:var(--white);border-radius:6px;border:1px solid var(--border);">
@@ -1384,7 +1413,7 @@
                                     style="background:var(--bg-light);border-radius:10px;padding:14px 16px;border-left:3px solid var(--accent);">
                                     <h4
                                         style="font-size:0.85rem;font-weight:700;color:var(--primary);margin-bottom:8px;">
-                                        🌐 Blockchain Ecosystems</h4>
+                                         Blockchain Ecosystems</h4>
                                     <div style="display:flex;flex-direction:column;gap:6px;font-size:0.78rem;">
                                         <div
                                             style="padding:6px 10px;background:var(--white);border-radius:6px;border:1px solid var(--border);">
@@ -1415,7 +1444,7 @@
                                     style="background:var(--bg-light);border-radius:10px;padding:14px 16px;border-left:3px solid var(--accent);">
                                     <h4
                                         style="font-size:0.85rem;font-weight:700;color:var(--primary);margin-bottom:8px;">
-                                        🤖 AI &amp; Confidential Computing</h4>
+                                         AI &amp; Confidential Computing</h4>
                                     <div style="display:flex;flex-direction:column;gap:6px;font-size:0.78rem;">
                                         <div
                                             style="padding:6px 10px;background:var(--white);border-radius:6px;border:1px solid var(--border);">
@@ -1437,7 +1466,7 @@
                                             style="padding:6px 10px;background:var(--white);border-radius:6px;border:1px solid var(--border);">
                                             <strong style="color:var(--primary);">Organised by</strong><br />
                                             <span style="color:var(--text-muted);">UZH Blockchain Center · University of
-                                                Zurich 🇨🇭</span>
+                                                Zurich </span>
                                         </div>
                                     </div>
                                 </div>
@@ -1447,7 +1476,7 @@
                 </div>
 
 
-                <!-- ══ CARD 13: UZH Blockchain Summer School — Week 1 Highlights ══ -->
+                <!--  CARD 13: UZH Blockchain Summer School — Week 1 Highlights  -->
                 <div class="reveal"
                     style="background:var(--white);border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08);border:1px solid var(--border);">
                     <div
@@ -1475,7 +1504,7 @@
                         <button onclick="toggleCard('conf13')" id="conf13Btn"
                             style="background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);color:#fff;padding:8px 22px;border-radius:50px;font-size:0.82rem;font-weight:700;cursor:pointer;transition:all 0.25s;"
                             onmouseover="this.style.background='rgba(201,146,58,0.3)'"
-                            onmouseout="this.style.background='rgba(255,255,255,0.12)'">▼ View Details</button>
+                            onmouseout="this.style.background='rgba(255,255,255,0.12)'"> View Details</button>
                     </div>
                     <!-- Expandable body -->
                     <div id="conf13"
@@ -1486,23 +1515,25 @@
                                 style="width:100%;height:200px;object-fit:cover;object-position:top;" />
                             <img loading="lazy" src="../images/w1_lecture1.png" alt="Ethereum supply lecture"
                                 style="width:100%;height:200px;object-fit:cover;" />
-                            <img loading="lazy" src="../images/w1_lecture2.png" alt="Blockchain applications ecosystem slide"
+                            <img loading="lazy" src="../images/w1_lecture2.png"
+                                alt="Blockchain applications ecosystem slide"
                                 style="width:100%;height:200px;object-fit:cover;" />
-                            <img loading="lazy" src="../images/w1_eth.jpg" alt="Yann Vonlanthen — Ethereum Foundation talk"
+                            <img loading="lazy" src="../images/w1_eth.jpg"
+                                alt="Yann Vonlanthen — Ethereum Foundation talk"
                                 style="width:100%;height:200px;object-fit:cover;" />
                         </div>
                         <div style="padding:24px 28px;">
                             <p style="font-size:0.85rem;color:var(--text-body);line-height:1.8;margin-bottom:16px;">An
                                 innovation-rich first week exploring the <strong>technical pillars of
                                     blockchain</strong>, Ethereum architecture, token economics, smart contracts, DeFi,
-                                and cutting-edge hands-on labs. Onward to Week 2! 🚀</p>
+                                and cutting-edge hands-on labs. Onward to Week 2! </p>
                             <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;">
                                 <!-- Track 1 -->
                                 <div
                                     style="background:var(--bg-light);border-radius:10px;padding:14px 16px;border-left:3px solid var(--accent);">
                                     <h4
                                         style="font-size:0.85rem;font-weight:700;color:var(--primary);margin-bottom:8px;">
-                                        ⛓️ Blockchain Fundamentals</h4>
+                                        ️ Blockchain Fundamentals</h4>
                                     <div style="display:flex;flex-direction:column;gap:6px;font-size:0.78rem;">
                                         <div
                                             style="padding:6px 10px;background:var(--white);border-radius:6px;border:1px solid var(--border);">
@@ -1566,7 +1597,7 @@
                                     style="background:var(--bg-light);border-radius:10px;padding:14px 16px;border-left:3px solid var(--accent);">
                                     <h4
                                         style="font-size:0.85rem;font-weight:700;color:var(--primary);margin-bottom:8px;">
-                                        🔐 Cryptography, DeFi &amp; Tokenomics</h4>
+                                         Cryptography, DeFi &amp; Tokenomics</h4>
                                     <div style="display:flex;flex-direction:column;gap:6px;font-size:0.78rem;">
                                         <div
                                             style="padding:6px 10px;background:var(--white);border-radius:6px;border:1px solid var(--border);">
@@ -1586,7 +1617,7 @@
                                             style="padding:6px 10px;background:var(--white);border-radius:6px;border:1px solid var(--border);">
                                             <strong style="color:var(--primary);">Organised by</strong><br />
                                             <span style="color:var(--text-muted);">UZH Blockchain Center · University of
-                                                Zurich 🇨🇭</span>
+                                                Zurich </span>
                                         </div>
                                     </div>
                                 </div>
@@ -1596,7 +1627,7 @@
                 </div>
 
 
-                <!-- ══ CARD 14: 6th UZH International Summer School — Deep Dive into Blockchain 2025 (Launch) ══ -->
+                <!--  CARD 14: 6th UZH International Summer School — Deep Dive into Blockchain 2025 (Launch)  -->
                 <div class="reveal"
                     style="background:var(--white);border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08);border:1px solid var(--border);">
                     <div
@@ -1606,12 +1637,12 @@
                         <div>
                             <div
                                 style="font-size:0.65rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:5px;">
-                                UZH Blockchain Center · University of Zurich 🇨🇭 · Summer 2025</div>
+                                UZH Blockchain Center · University of Zurich  · Summer 2025</div>
                             <h3 style="color:#fff;font-size:1.1rem;margin:0 0 8px;line-height:1.25;">6th UZH
                                 International Summer School — Deep Dive into Blockchain 2025</h3>
                             <div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;">
                                 <span
-                                    style="background:rgba(201,146,58,0.2);border:1px solid rgba(201,146,58,0.4);color:var(--accent);padding:2px 10px;border-radius:50px;font-size:0.68rem;font-weight:700;">🎓
+                                    style="background:rgba(201,146,58,0.2);border:1px solid rgba(201,146,58,0.4);color:var(--accent);padding:2px 10px;border-radius:50px;font-size:0.68rem;font-weight:700;">
                                     Teaching Assistant · 6th Edition</span>
                                 <span
                                     style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.85);padding:2px 10px;border-radius:50px;font-size:0.68rem;font-weight:700;">Economics
@@ -1624,7 +1655,7 @@
                         <button onclick="toggleCard('conf14')" id="conf14Btn"
                             style="background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);color:#fff;padding:8px 22px;border-radius:50px;font-size:0.82rem;font-weight:700;cursor:pointer;transition:all 0.25s;"
                             onmouseover="this.style.background='rgba(201,146,58,0.3)'"
-                            onmouseout="this.style.background='rgba(255,255,255,0.12)'">▼ View Details</button>
+                            onmouseout="this.style.background='rgba(255,255,255,0.12)'"> View Details</button>
                     </div>
                     <!-- Expandable body -->
                     <div id="conf14"
@@ -1634,7 +1665,8 @@
                             <img loading="lazy" src="../images/ddib6_opening.png"
                                 alt="DDIB 2025 Opening — Deep Dive into Blockchain slide"
                                 style="width:100%;height:auto;display:block;" />
-                            <img loading="lazy" src="../images/ddib6_ta.png" alt="Who Are We — Teaching Assistants slide"
+                            <img loading="lazy" src="../images/ddib6_ta.png"
+                                alt="Who Are We — Teaching Assistants slide"
                                 style="width:100%;height:auto;display:block;" />
                         </div>
                         <div style="padding:24px 28px;">
@@ -1642,7 +1674,7 @@
                                 <div>
                                     <h4
                                         style="font-size:0.9rem;font-weight:700;color:var(--primary);margin-bottom:10px;">
-                                        🏫 Programme Overview</h4>
+                                         Programme Overview</h4>
                                     <p
                                         style="font-size:0.85rem;color:var(--text-body);line-height:1.8;margin-bottom:12px;">
                                         The programme is now underway — the <strong>6th UZH International Summer School:
@@ -1662,7 +1694,7 @@
                                 <div>
                                     <h4
                                         style="font-size:0.9rem;font-weight:700;color:var(--primary);margin-bottom:10px;">
-                                        📌 Programme Details</h4>
+                                         Programme Details</h4>
                                     <div style="display:flex;flex-direction:column;gap:7px;">
                                         <div
                                             style="padding:8px 13px;background:var(--bg-light);border-radius:8px;border-left:3px solid #1a4a8a;font-size:0.82rem;">
@@ -1686,7 +1718,7 @@
                                             style="padding:8px 13px;background:var(--cream);border-radius:8px;border-left:3px solid #1a4a8a;font-size:0.8rem;border:1px solid var(--cream-dark);">
                                             <strong style="color:var(--primary);">Institution</strong><br />
                                             <span style="color:var(--text-muted);">UZH Blockchain Center · University of
-                                                Zurich 🇨🇭</span>
+                                                Zurich </span>
                                         </div>
                                     </div>
                                 </div>
@@ -1696,7 +1728,7 @@
                 </div>
 
 
-                <!-- ══ CARD 15: NTU 4th Annual Conference on the Intersection of Corporate Law and Technology ══ -->
+                <!--  CARD 15: NTU 4th Annual Conference on the Intersection of Corporate Law and Technology  -->
                 <div class="reveal"
                     style="background:var(--white);border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08);border:1px solid var(--border);">
                     <div
@@ -1727,7 +1759,7 @@
                         <button onclick="toggleCard('conf15')" id="conf15Btn"
                             style="background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);color:#fff;padding:8px 22px;border-radius:50px;font-size:0.82rem;font-weight:700;cursor:pointer;transition:all 0.25s;"
                             onmouseover="this.style.background='rgba(255,255,255,0.25)'"
-                            onmouseout="this.style.background='rgba(255,255,255,0.12)'">▼ View Details</button>
+                            onmouseout="this.style.background='rgba(255,255,255,0.12)'"> View Details</button>
                     </div>
                     <!-- Expandable body -->
                     <div id="conf15"
@@ -1737,7 +1769,8 @@
                             <img loading="lazy" src="../images/ntu_title.png"
                                 alt="Intersection of Corporate Law and Technology Title slide"
                                 style="width:100%;height:180px;object-fit:cover;object-position:left;" />
-                            <img loading="lazy" src="../images/ntu_recovery.png" alt="Practical Concerns in Recovery slide"
+                            <img loading="lazy" src="../images/ntu_recovery.png"
+                                alt="Practical Concerns in Recovery slide"
                                 style="width:100%;height:180px;object-fit:cover;" />
                             <img loading="lazy" src="../images/ntu_agenda_am.png" alt="Morning Agenda Panel 1"
                                 style="width:100%;height:180px;object-fit:cover;object-position:top left;" />
@@ -1756,31 +1789,31 @@
                                 <div>
                                     <h4
                                         style="font-size:0.9rem;font-weight:700;color:var(--primary);margin-bottom:12px;">
-                                        🎯 Key Highlights &amp; Panels</h4>
+                                         Key Highlights &amp; Panels</h4>
                                     <div style="display:flex;flex-direction:column;gap:8px;font-size:0.82rem;">
                                         <div
                                             style="padding:10px 14px;background:var(--bg-light);border-left:3px solid #b3003b;border-radius:6px;">
-                                            <strong style="color:var(--primary);">🤖 Legal AI Tools</strong><br />
+                                            <strong style="color:var(--primary);"> Legal AI Tools</strong><br />
                                             <span style="color:var(--text-body);">Empowering distressed businesses with
                                                 generative AI advice</span>
                                         </div>
                                         <div
                                             style="padding:10px 14px;background:var(--bg-light);border-left:3px solid #b3003b;border-radius:6px;">
-                                            <strong style="color:var(--primary);">⚙️ Automation in
+                                            <strong style="color:var(--primary);">️ Automation in
                                                 Insolvency</strong><br />
                                             <span style="color:var(--text-body);">Assisting complex decisions &amp;
                                                 recovery practicalities</span>
                                         </div>
                                         <div
                                             style="padding:10px 14px;background:var(--bg-light);border-left:3px solid #b3003b;border-radius:6px;">
-                                            <strong style="color:var(--primary);">📘 AI Literacy &amp; the EU AI
+                                            <strong style="color:var(--primary);"> AI Literacy &amp; the EU AI
                                                 Act</strong><br />
                                             <span style="color:var(--text-body);">Turning compliance rules into business
                                                 opportunities &amp; risk management</span>
                                         </div>
                                         <div
                                             style="padding:10px 14px;background:var(--bg-light);border-left:3px solid #b3003b;border-radius:6px;">
-                                            <strong style="color:var(--primary);">💸 Crypto-assets &amp; Smart
+                                            <strong style="color:var(--primary);"> Crypto-assets &amp; Smart
                                                 Contracts</strong><br />
                                             <span style="color:var(--text-body);">Reshaping insolvency claims and
                                                 automated transactions</span>
@@ -1792,7 +1825,7 @@
                                 <div>
                                     <h4
                                         style="font-size:0.9rem;font-weight:700;color:var(--primary);margin-bottom:12px;">
-                                        🎙️ Keynote &amp; Speakers</h4>
+                                        ️ Keynote &amp; Speakers</h4>
                                     <div
                                         style="padding:12px 16px;background:var(--white);border:1px solid var(--border);border-radius:8px;margin-bottom:12px;">
                                         <strong style="color:var(--accent-dark);">Keynote Address</strong><br />
@@ -1821,7 +1854,7 @@
                 </div>
 
 
-                <!-- ══ CARD 16: SNB-CIF Conference on Cryptoassets and Financial Innovation ══ -->
+                <!--  CARD 16: SNB-CIF Conference on Cryptoassets and Financial Innovation  -->
                 <div class="reveal"
                     style="background:var(--white);border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08);border:1px solid var(--border);">
                     <div
@@ -1831,7 +1864,7 @@
                         <div>
                             <div
                                 style="font-size:0.65rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.8);margin-bottom:5px;">
-                                Swiss National Bank 🇨🇭 · Center for Innovative Finance (Universität Basel)</div>
+                                Swiss National Bank  · Center for Innovative Finance (Universität Basel)</div>
                             <h3 style="color:#fff;font-size:1.1rem;margin:0 0 8px;line-height:1.25;">SNB-CIF Conference
                                 on Cryptoassets and Financial Innovation</h3>
                             <div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;">
@@ -1849,7 +1882,7 @@
                         <button onclick="toggleCard('conf16')" id="conf16Btn"
                             style="background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);color:#fff;padding:8px 22px;border-radius:50px;font-size:0.82rem;font-weight:700;cursor:pointer;transition:all 0.25s;"
                             onmouseover="this.style.background='rgba(255,255,255,0.25)'"
-                            onmouseout="this.style.background='rgba(255,255,255,0.12)'">▼ View Details</button>
+                            onmouseout="this.style.background='rgba(255,255,255,0.12)'"> View Details</button>
                     </div>
                     <!-- Expandable body -->
                     <div id="conf16"
@@ -1877,7 +1910,7 @@
                                 <div>
                                     <h4
                                         style="font-size:0.9rem;font-weight:700;color:var(--primary);margin-bottom:12px;">
-                                        🔍 Key Topics &amp; Paradigms</h4>
+                                         Key Topics &amp; Paradigms</h4>
                                     <ul
                                         style="margin:0;padding-left:18px;font-size:0.83rem;color:var(--text-body);line-height:1.7;">
                                         <li><strong>Stablecoin flows</strong> and runs</li>
@@ -1895,7 +1928,7 @@
                                 <div>
                                     <h4
                                         style="font-size:0.9rem;font-weight:700;color:var(--primary);margin-bottom:12px;">
-                                        🏛️ Institutional Presence</h4>
+                                        ️ Institutional Presence</h4>
                                     <p
                                         style="font-size:0.83rem;color:var(--text-body);line-height:1.7;margin-bottom:12px;">
                                         Discussions emphasised protocols not just as technical tools, but as sites of
@@ -1905,7 +1938,7 @@
                                     </p>
                                     <div
                                         style="padding:12px 16px;background:var(--bg-light);border:1px solid var(--border);border-radius:8px;font-size:0.75rem;">
-                                        <strong style="color:var(--primary);font-size:0.8rem;">✅ Participants
+                                        <strong style="color:var(--primary);font-size:0.8rem;"> Participants
                                             included:</strong><br />
                                         <div style="margin-top:6px;line-height:1.6;color:var(--text-muted);">
                                             European Central Bank · International Monetary Fund · Bank for International
@@ -1922,7 +1955,7 @@
                 </div>
 
 
-                <!-- ══ CARD 17: AI, Blockchain & Beyond: Next-Gen Tech for Health Data Privacy ══ -->
+                <!--  CARD 17: AI, Blockchain & Beyond: Next-Gen Tech for Health Data Privacy  -->
                 <div class="reveal"
                     style="background:var(--white);border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08);border:1px solid var(--border);">
                     <div
@@ -1953,7 +1986,7 @@
                         <button onclick="toggleCard('conf17')" id="conf17Btn"
                             style="background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);color:#fff;padding:8px 22px;border-radius:50px;font-size:0.82rem;font-weight:700;cursor:pointer;transition:all 0.25s;"
                             onmouseover="this.style.background='rgba(255,255,255,0.25)'"
-                            onmouseout="this.style.background='rgba(255,255,255,0.12)'">▼ View Details</button>
+                            onmouseout="this.style.background='rgba(255,255,255,0.12)'"> View Details</button>
                     </div>
                     <!-- Expandable body -->
                     <div id="conf17"
@@ -1965,7 +1998,8 @@
                                 style="width:100%;height:180px;object-fit:cover;" />
                             <img loading="lazy" src="../images/health_panel1.png" alt="Panel 1 discussion"
                                 style="width:100%;height:180px;object-fit:cover;object-position:top;" />
-                            <img loading="lazy" src="../images/health_panel2.jpg" alt="Panel 2 Healthcare Privacy Solutions"
+                            <img loading="lazy" src="../images/health_panel2.jpg"
+                                alt="Panel 2 Healthcare Privacy Solutions"
                                 style="width:100%;height:180px;object-fit:cover;object-position:top;" />
                             <img loading="lazy" src="../images/health_panel3.png" alt="Panel discussion wide view"
                                 style="width:100%;height:180px;object-fit:cover;object-position:top;" />
@@ -1975,7 +2009,7 @@
                                 <div>
                                     <h4
                                         style="font-size:0.9rem;font-weight:700;color:var(--primary);margin-bottom:10px;">
-                                        🛡️ Event Overview</h4>
+                                        ️ Event Overview</h4>
                                     <p
                                         style="font-size:0.85rem;color:var(--text-body);line-height:1.8;margin-bottom:12px;">
                                         A timely exploration of how technologies like <strong>blockchain, AI, and
@@ -2005,18 +2039,18 @@
                                 <div>
                                     <h4
                                         style="font-size:0.9rem;font-weight:700;color:var(--primary);margin-bottom:12px;">
-                                        🧩 Key Areas Explored</h4>
+                                         Key Areas Explored</h4>
                                     <div style="display:flex;flex-direction:column;gap:8px;font-size:0.82rem;">
                                         <div
                                             style="padding:10px 14px;background:var(--white);border:1px solid var(--border);border-left:3px solid #4a3b72;border-radius:6px;">
-                                            <strong style="color:var(--primary);">🧠 Self-Sovereign
+                                            <strong style="color:var(--primary);"> Self-Sovereign
                                                 Healthcare</strong><br />
                                             <span style="color:var(--text-muted);">The shift towards self-sovereign data
                                                 management in healthcare.</span>
                                         </div>
                                         <div
                                             style="padding:10px 14px;background:var(--white);border:1px solid var(--border);border-left:3px solid #4a3b72;border-radius:6px;">
-                                            <strong style="color:var(--primary);">🔐 Securing Sensitive Health
+                                            <strong style="color:var(--primary);"> Securing Sensitive Health
                                                 Data</strong><br />
                                             <span style="color:var(--text-muted);">The role of zero-knowledge proofs
                                                 (ZKPs), decentralized identifiers (DIDs), and blockchain
@@ -2024,7 +2058,7 @@
                                         </div>
                                         <div
                                             style="padding:10px 14px;background:var(--white);border:1px solid var(--border);border-left:3px solid #4a3b72;border-radius:6px;">
-                                            <strong style="color:var(--primary);">⚖️ Regulation &amp;
+                                            <strong style="color:var(--primary);">️ Regulation &amp;
                                                 Standards</strong><br />
                                             <span style="color:var(--text-muted);">Challenges around interoperability,
                                                 data standardization, and compliance with EU regulations like
@@ -2046,7 +2080,7 @@
                 </div>
 
 
-                <!-- ══ CARD 18: Crypto Valley Conference 2025 - Sunset Cruise ══ -->
+                <!--  CARD 18: Crypto Valley Conference 2025 - Sunset Cruise  -->
                 <div class="reveal"
                     style="background:var(--white);border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08);border:1px solid var(--border);">
                     <div
@@ -2056,7 +2090,7 @@
                         <div>
                             <div
                                 style="font-size:0.65rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.8);margin-bottom:5px;">
-                                Lake Zug 🇨🇭 · Crypto Valley Association</div>
+                                Lake Zug  · Crypto Valley Association</div>
                             <h3 style="color:#fff;font-size:1.1rem;margin:0 0 8px;line-height:1.25;">Crypto Valley
                                 Conference 2025 — Sunset Cruise</h3>
                             <div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;">
@@ -2070,7 +2104,7 @@
                         <button onclick="toggleCard('conf18')" id="conf18Btn"
                             style="background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);color:#fff;padding:8px 22px;border-radius:50px;font-size:0.82rem;font-weight:700;cursor:pointer;transition:all 0.25s;"
                             onmouseover="this.style.background='rgba(255,255,255,0.25)'"
-                            onmouseout="this.style.background='rgba(255,255,255,0.12)'">▼ View Details</button>
+                            onmouseout="this.style.background='rgba(255,255,255,0.12)'"> View Details</button>
                     </div>
                     <!-- Expandable body -->
                     <div id="conf18"
@@ -2090,16 +2124,16 @@
                             <p
                                 style="font-size:0.9rem;color:var(--text-body);line-height:1.7;margin-bottom:0;text-align:center;max-width:800px;margin-left:auto;margin-right:auto;">
                                 Wrapped up Crypto Valley Conference 2025 with an unforgettable <strong>sunset cruise on
-                                    Lake Zug 🌅🇨🇭</strong><br /><br />
+                                    Lake Zug </strong><br /><br />
                                 A perfect evening to network, reflect, and connect with brilliant minds from across the
-                                <strong>blockchain and fintech space</strong>. 🌐🤝
+                                <strong>blockchain and fintech space</strong>. 
                             </p>
                         </div>
                     </div>
                 </div>
 
 
-                <!-- ══ CARD 19: Crypto Valley Conference 2025 - Day 2 ══ -->
+                <!--  CARD 19: Crypto Valley Conference 2025 - Day 2  -->
                 <div class="reveal"
                     style="background:var(--white);border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08);border:1px solid var(--border);">
                     <div
@@ -2109,7 +2143,7 @@
                         <div>
                             <div
                                 style="font-size:0.65rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.8);margin-bottom:5px;">
-                                Rotkreuz, Zug 🇨🇭 · Crypto Valley Association</div>
+                                Rotkreuz, Zug  · Crypto Valley Association</div>
                             <h3 style="color:#fff;font-size:1.1rem;margin:0 0 8px;line-height:1.25;">Crypto Valley
                                 Conference 2025 — Day 2</h3>
                             <div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;">
@@ -2127,7 +2161,7 @@
                         <button onclick="toggleCard('conf19')" id="conf19Btn"
                             style="background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);color:#fff;padding:8px 22px;border-radius:50px;font-size:0.82rem;font-weight:700;cursor:pointer;transition:all 0.25s;"
                             onmouseover="this.style.background='rgba(255,255,255,0.25)'"
-                            onmouseout="this.style.background='rgba(255,255,255,0.12)'">▼ View Details</button>
+                            onmouseout="this.style.background='rgba(255,255,255,0.12)'"> View Details</button>
                     </div>
                     <!-- Expandable body -->
                     <div id="conf19"
@@ -2148,41 +2182,41 @@
                                 Another remarkable day in Rotkreuz, Zug diving deep into the real-world evolution of
                                 <strong>blockchain, AI, and digital finance</strong>. Today’s sessions brought together
                                 regulators, builders, researchers, and innovators exploring everything from
-                                decentralized infrastructure to institutional crypto strategies. 🚀
+                                decentralized infrastructure to institutional crypto strategies. 
                             </p>
 
                             <div>
-                                <h4 style="font-size:0.9rem;font-weight:700;color:var(--primary);margin-bottom:12px;">📊
+                                <h4 style="font-size:0.9rem;font-weight:700;color:var(--primary);margin-bottom:12px;">
                                     Topics Covered Throughout the Day</h4>
                                 <div
                                     style="display:grid;grid-template-columns:1fr 1fr;gap:12px;font-size:0.82rem;color:var(--text-body);">
                                     <div
                                         style="padding:10px 14px;background:var(--bg-light);border-left:3px solid #e60000;border-radius:6px;">
-                                        🧠 <strong>Distributed Intelligence &amp; Crypto-AI Convergence</strong>
+                                         <strong>Distributed Intelligence &amp; Crypto-AI Convergence</strong>
                                     </div>
                                     <div
                                         style="padding:10px 14px;background:var(--bg-light);border-left:3px solid #e60000;border-radius:6px;">
-                                        🏦 <strong>CBDCs, Stablecoins &amp; Digital Money Evolution</strong>
+                                         <strong>CBDCs, Stablecoins &amp; Digital Money Evolution</strong>
                                     </div>
                                     <div
                                         style="padding:10px 14px;background:var(--bg-light);border-left:3px solid #e60000;border-radius:6px;">
-                                        🔐 <strong>Custody, Compliance &amp; the Future of Security</strong>
+                                         <strong>Custody, Compliance &amp; the Future of Security</strong>
                                     </div>
                                     <div
                                         style="padding:10px 14px;background:var(--bg-light);border-left:3px solid #e60000;border-radius:6px;">
-                                        📈 <strong>Institutional Market Strategy &amp; Asset Management</strong>
+                                         <strong>Institutional Market Strategy &amp; Asset Management</strong>
                                     </div>
                                     <div
                                         style="padding:10px 14px;background:var(--bg-light);border-left:3px solid #e60000;border-radius:6px;">
-                                        ⚖️ <strong>Digital Law, AML, and Governance Innovation</strong>
+                                        ️ <strong>Digital Law, AML, and Governance Innovation</strong>
                                     </div>
                                     <div
                                         style="padding:10px 14px;background:var(--bg-light);border-left:3px solid #e60000;border-radius:6px;">
-                                        🎨 <strong>NFTs, Digital Identity &amp; On-Chain Collectibles</strong>
+                                         <strong>NFTs, Digital Identity &amp; On-Chain Collectibles</strong>
                                     </div>
                                     <div
                                         style="padding:10px 14px;background:var(--bg-light);border-left:3px solid #e60000;border-radius:6px;grid-column:1 / -1;">
-                                        🔬 <strong>Cryptoeconomics, DAO Tokenomics &amp; Protocol Security (Academic
+                                         <strong>Cryptoeconomics, DAO Tokenomics &amp; Protocol Security (Academic
                                             Track)</strong>
                                     </div>
                                 </div>
@@ -2192,7 +2226,7 @@
                 </div>
 
 
-                <!-- ══ CARD 20: Crypto Valley Conference 2025 - Day 1 ══ -->
+                <!--  CARD 20: Crypto Valley Conference 2025 - Day 1  -->
                 <div class="reveal"
                     style="background:var(--white);border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08);border:1px solid var(--border);">
                     <div
@@ -2202,7 +2236,7 @@
                         <div>
                             <div
                                 style="font-size:0.65rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.8);margin-bottom:5px;">
-                                Rotkreuz, Zug 🇨🇭 · Crypto Valley Association</div>
+                                Rotkreuz, Zug  · Crypto Valley Association</div>
                             <h3 style="color:#fff;font-size:1.1rem;margin:0 0 8px;line-height:1.25;">Crypto Valley
                                 Conference 2025 — Day 1</h3>
                             <div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;">
@@ -2220,7 +2254,7 @@
                         <button onclick="toggleCard('conf20')" id="conf20Btn"
                             style="background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);color:#fff;padding:8px 22px;border-radius:50px;font-size:0.82rem;font-weight:700;cursor:pointer;transition:all 0.25s;"
                             onmouseover="this.style.background='rgba(255,255,255,0.25)'"
-                            onmouseout="this.style.background='rgba(255,255,255,0.12)'">▼ View Details</button>
+                            onmouseout="this.style.background='rgba(255,255,255,0.12)'"> View Details</button>
                     </div>
                     <!-- Expandable body -->
                     <div id="conf20"
@@ -2229,7 +2263,8 @@
                         <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:0;">
                             <img loading="lazy" src="../images/cvc1_redcarpet.jpg" alt="Red carpet Day 1"
                                 style="width:100%;height:180px;object-fit:cover;object-position:top;" />
-                            <img loading="lazy" src="../images/cvc1_audience.png" alt="Startup Competition Judging Panel"
+                            <img loading="lazy" src="../images/cvc1_audience.png"
+                                alt="Startup Competition Judging Panel"
                                 style="width:100%;height:180px;object-fit:cover;object-position:top left;" />
                             <img loading="lazy" src="../images/cvc1_outdoor.jpg" alt="Outdoor networking area"
                                 style="width:100%;height:180px;object-fit:cover;" />
@@ -2240,39 +2275,39 @@
                             <p style="font-size:0.85rem;color:var(--text-body);line-height:1.8;margin-bottom:16px;">A
                                 truly inspiring start to one of the most influential events in the blockchain world,
                                 bringing together brilliant minds from startups, academia, corporates, and governments
-                                to <strong>"Set the Foundation for the Future of Blockchain."</strong> 🚀</p>
+                                to <strong>"Set the Foundation for the Future of Blockchain."</strong> </p>
 
                             <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;">
                                 <!-- Left Column: Highlights -->
                                 <div>
                                     <h4
                                         style="font-size:0.9rem;font-weight:700;color:var(--primary);margin-bottom:12px;">
-                                        🧩 Key Themes Covered</h4>
+                                         Key Themes Covered</h4>
                                     <div style="display:flex;flex-direction:column;gap:8px;font-size:0.82rem;">
                                         <div
                                             style="padding:10px 14px;background:var(--bg-light);border-left:3px solid #ff8000;border-radius:6px;">
-                                            <strong style="color:var(--primary);">⚙️ Blockchain Technology &amp;
+                                            <strong style="color:var(--primary);">️ Blockchain Technology &amp;
                                                 Innovation</strong><br />
                                             <span style="color:var(--text-body);">Architectures and infrastructure
                                                 setting the stage for the next wave of Web3.</span>
                                         </div>
                                         <div
                                             style="padding:10px 14px;background:var(--bg-light);border-left:3px solid #ff8000;border-radius:6px;">
-                                            <strong style="color:var(--primary);">💰 DeFi, Digital Assets &amp;
+                                            <strong style="color:var(--primary);"> DeFi, Digital Assets &amp;
                                                 Finance</strong><br />
                                             <span style="color:var(--text-body);">Exploring the shifting dynamics of
                                                 decentralized value and asset markets.</span>
                                         </div>
                                         <div
                                             style="padding:10px 14px;background:var(--bg-light);border-left:3px solid #ff8000;border-radius:6px;">
-                                            <strong style="color:var(--primary);">📜 Regulation, Compliance &amp; Legal
+                                            <strong style="color:var(--primary);"> Regulation, Compliance &amp; Legal
                                                 Frameworks</strong><br />
                                             <span style="color:var(--text-body);">Navigating multi-jurisdictional
                                                 constraints and emerging regulatory standards.</span>
                                         </div>
                                         <div
                                             style="padding:10px 14px;background:var(--bg-light);border-left:3px solid #ff8000;border-radius:6px;">
-                                            <strong style="color:var(--primary);">🤝 Real-World
+                                            <strong style="color:var(--primary);"> Real-World
                                                 Applications</strong><br />
                                             <span style="color:var(--text-body);">Cross-sector collaboration driving
                                                 tangible, real-world utility of blockchain networks.</span>
@@ -2283,7 +2318,7 @@
                                 <div>
                                     <h4
                                         style="font-size:0.9rem;font-weight:700;color:var(--primary);margin-bottom:12px;">
-                                        💡 Event Highlights</h4>
+                                         Event Highlights</h4>
                                     <p
                                         style="font-size:0.83rem;color:var(--text-body);line-height:1.7;margin-bottom:12px;">
                                         From thought-provoking masterclasses to insightful panel discussions, the first
@@ -2317,7 +2352,7 @@
                 </div>
 
 
-                <!-- ══ CARD 21: Beyond Energy: Decentralized Solutions for Climate Change ══ -->
+                <!--  CARD 21: Beyond Energy: Decentralized Solutions for Climate Change  -->
                 <div class="reveal"
                     style="background:var(--white);border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08);border:1px solid var(--border);">
                     <div
@@ -2327,7 +2362,7 @@
                         <div>
                             <div
                                 style="font-size:0.65rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.8);margin-bottom:5px;">
-                                CV Labs, Zug 🇨🇭 · Crypto Valley Association &amp; Powerledger</div>
+                                CV Labs, Zug  · Crypto Valley Association &amp; Powerledger</div>
                             <h3 style="color:#fff;font-size:1.1rem;margin:0 0 8px;line-height:1.25;">Beyond Energy:
                                 Decentralized Solutions for Climate Change</h3>
                             <div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;">
@@ -2344,7 +2379,7 @@
                         <button onclick="toggleCard('conf21')" id="conf21Btn"
                             style="background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);color:#fff;padding:8px 22px;border-radius:50px;font-size:0.82rem;font-weight:700;cursor:pointer;transition:all 0.25s;"
                             onmouseover="this.style.background='rgba(255,255,255,0.25)'"
-                            onmouseout="this.style.background='rgba(255,255,255,0.12)'">▼ View Details</button>
+                            onmouseout="this.style.background='rgba(255,255,255,0.12)'"> View Details</button>
                     </div>
                     <!-- Expandable body -->
                     <div id="conf21"
@@ -2365,29 +2400,29 @@
                             <p style="font-size:0.85rem;color:var(--text-body);line-height:1.8;margin-bottom:16px;">I
                                 had the pleasure of attending an intellectually enriching event hosted by the
                                 <strong>Crypto Valley Association</strong> and <strong>Powerledger</strong>, exploring
-                                how decentralized technologies are driving impactful climate action. 🌱🌍
+                                how decentralized technologies are driving impactful climate action. 
                             </p>
 
                             <div>
-                                <h4 style="font-size:0.9rem;font-weight:700;color:var(--primary);margin-bottom:12px;">🌍
+                                <h4 style="font-size:0.9rem;font-weight:700;color:var(--primary);margin-bottom:12px;">
                                     Key Discussions Focused On</h4>
                                 <div
                                     style="display:grid;grid-template-columns:1fr 1fr;gap:12px;font-size:0.82rem;color:var(--text-body);">
                                     <div
                                         style="padding:10px 14px;background:var(--bg-light);border-left:3px solid #1a8a5c;border-radius:6px;">
-                                        🔗 <strong>Blockchain-powered carbon offset markets</strong>
+                                         <strong>Blockchain-powered carbon offset markets</strong>
                                     </div>
                                     <div
                                         style="padding:10px 14px;background:var(--bg-light);border-left:3px solid #1a8a5c;border-radius:6px;">
-                                        🔋 <strong>Decentralized energy systems</strong>
+                                         <strong>Decentralized energy systems</strong>
                                     </div>
                                     <div
                                         style="padding:10px 14px;background:var(--bg-light);border-left:3px solid #1a8a5c;border-radius:6px;">
-                                        📊 <strong>ESG data transparency</strong>
+                                         <strong>ESG data transparency</strong>
                                     </div>
                                     <div
                                         style="padding:10px 14px;background:var(--bg-light);border-left:3px solid #1a8a5c;border-radius:6px;">
-                                        🤝 <strong>Cross-sector collaboration for real-world sustainability</strong>
+                                         <strong>Cross-sector collaboration for real-world sustainability</strong>
                                     </div>
                                 </div>
                             </div>
@@ -2395,14 +2430,14 @@
                             <p
                                 style="font-size:0.85rem;color:var(--text-body);line-height:1.8;margin-top:16px;text-align:center;font-style:italic;">
                                 Let’s continue to build at the intersection of decentralization, law, and environmental
-                                sustainability. ⚡
+                                sustainability. 
                             </p>
                         </div>
                     </div>
                 </div>
 
 
-                <!-- ══ CARD 22: ICP 4th Anniversary: World Computer Summit 2025 ══ -->
+                <!--  CARD 22: ICP 4th Anniversary: World Computer Summit 2025  -->
                 <div class="reveal"
                     style="background:var(--white);border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08);border:1px solid var(--border);">
                     <div
@@ -2412,7 +2447,7 @@
                         <div>
                             <div
                                 style="font-size:0.65rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.8);margin-bottom:5px;">
-                                Zürich 🇨🇭 · DFINITY Foundation &amp; Crypto Valley Association</div>
+                                Zürich  · DFINITY Foundation &amp; Crypto Valley Association</div>
                             <h3 style="color:#fff;font-size:1.1rem;margin:0 0 8px;line-height:1.25;">ICP 4th
                                 Anniversary: World Computer Summit 2025</h3>
                             <div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;">
@@ -2430,7 +2465,7 @@
                         <button onclick="toggleCard('conf22')" id="conf22Btn"
                             style="background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);color:#fff;padding:8px 22px;border-radius:50px;font-size:0.82rem;font-weight:700;cursor:pointer;transition:all 0.25s;"
                             onmouseover="this.style.background='rgba(255,255,255,0.25)'"
-                            onmouseout="this.style.background='rgba(255,255,255,0.12)'">▼ View Details</button>
+                            onmouseout="this.style.background='rgba(255,255,255,0.12)'"> View Details</button>
                     </div>
                     <!-- Expandable body -->
                     <div id="conf22"
@@ -2451,35 +2486,35 @@
                                 had the opportunity to attend the <strong>#ICP 4th Anniversary:
                                     #World_Computer_Summit_2025</strong> in Zürich, an event that brought together
                                 leading voices in technology, policy, and academia to explore the evolving landscape of
-                                the internet, governance, and innovation. 🌐</p>
+                                the internet, governance, and innovation. </p>
 
                             <div>
-                                <h4 style="font-size:0.9rem;font-weight:700;color:var(--primary);margin-bottom:12px;">🧠
+                                <h4 style="font-size:0.9rem;font-weight:700;color:var(--primary);margin-bottom:12px;">
                                     Key Topics Discussed</h4>
                                 <div
                                     style="display:grid;grid-template-columns:1fr 1fr;gap:12px;font-size:0.82rem;color:var(--text-body);">
                                     <div
                                         style="padding:10px 14px;background:var(--bg-light);border-left:3px solid #4d2bcf;border-radius:6px;">
-                                        🌍 <strong>Digital colonialism</strong> and the geopolitical implications of
+                                         <strong>Digital colonialism</strong> and the geopolitical implications of
                                         technological infrastructure
                                     </div>
                                     <div
                                         style="padding:10px 14px;background:var(--bg-light);border-left:3px solid #4d2bcf;border-radius:6px;">
-                                        🔐 <strong>Sovereignty and data ownership</strong> in critical security
+                                         <strong>Sovereignty and data ownership</strong> in critical security
                                         frameworks
                                     </div>
                                     <div
                                         style="padding:10px 14px;background:var(--bg-light);border-left:3px solid #4d2bcf;border-radius:6px;">
-                                        🚀 <strong>Democratizing access</strong> to technology through decentralized
+                                         <strong>Democratizing access</strong> to technology through decentralized
                                         networks
                                     </div>
                                     <div
                                         style="padding:10px 14px;background:var(--bg-light);border-left:3px solid #4d2bcf;border-radius:6px;">
-                                        📊 <strong>Technology’s role</strong> in economic development and governance
+                                         <strong>Technology’s role</strong> in economic development and governance
                                     </div>
                                     <div
                                         style="padding:10px 14px;background:var(--bg-light);border-left:3px solid #4d2bcf;border-radius:6px;grid-column:1 / -1;">
-                                        🤖 <strong>The future of AI, blockchain, and the Self-Writing Internet</strong>
+                                         <strong>The future of AI, blockchain, and the Self-Writing Internet</strong>
                                     </div>
                                 </div>
                             </div>
@@ -2494,17 +2529,18 @@
                 </div>
 
 
-                <!-- ══ CARD 23: Attending World Computer Summit 2025 ══ -->
+                <!--  CARD 23: Attending World Computer Summit 2025  -->
                 <div class="reveal"
                     style="background:var(--white);border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08);border:1px solid var(--border);">
                     <div
                         style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px;padding:22px 24px 18px;background:linear-gradient(135deg,#1f0038,#47008a);">
-                        <img loading="lazy" src="../images/icp_preview_banner.png" alt="ICP World Computer Summit Preview"
+                        <img loading="lazy" src="../images/icp_preview_banner.png"
+                            alt="ICP World Computer Summit Preview"
                             style="width:90px;height:55px;object-fit:cover;object-position:center;border-radius:8px;border:2px solid rgba(255,255,255,0.4);" />
                         <div>
                             <div
                                 style="font-size:0.65rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.8);margin-bottom:5px;">
-                                Zürich 🇨🇭 · DFINITY Foundation</div>
+                                Zürich  · DFINITY Foundation</div>
                             <h3 style="color:#fff;font-size:1.1rem;margin:0 0 8px;line-height:1.25;">Attending: World
                                 Computer Summit 2025</h3>
                             <div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;">
@@ -2521,7 +2557,7 @@
                         <button onclick="toggleCard('conf23')" id="conf23Btn"
                             style="background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);color:#fff;padding:8px 22px;border-radius:50px;font-size:0.82rem;font-weight:700;cursor:pointer;transition:all 0.25s;"
                             onmouseover="this.style.background='rgba(255,255,255,0.25)'"
-                            onmouseout="this.style.background='rgba(255,255,255,0.12)'">▼ View Details</button>
+                            onmouseout="this.style.background='rgba(255,255,255,0.12)'"> View Details</button>
                     </div>
                     <!-- Expandable body -->
                     <div id="conf23"
@@ -2538,16 +2574,16 @@
                             <p
                                 style="font-size:0.95rem;color:var(--text-body);line-height:1.8;margin-bottom:16px;text-align:center;max-width:800px;margin-left:auto;margin-right:auto;">
                                 Tomorrow, I’ll be attending the <strong>World Computer Summit 2025</strong> in Zürich,
-                                celebrating the 4th Anniversary of the Internet Computer (ICP) 🌐.
+                                celebrating the 4th Anniversary of the Internet Computer (ICP) .
                                 <br /><br />
-                                Looking forward to engaging discussions on <strong>decentralized computing</strong> 🔗,
-                                <strong>Web3</strong> 🚀, and <strong>AI-driven innovation</strong> 🤖.
+                                Looking forward to engaging discussions on <strong>decentralized computing</strong> ,
+                                <strong>Web3</strong> , and <strong>AI-driven innovation</strong> .
                             </p>
 
                             <div style="text-align:center;margin-top:20px;">
                                 <span
                                     style="display:inline-block;padding:12px 24px;background:var(--cream);border:1px solid var(--cream-dark);border-radius:50px;font-size:0.85rem;color:var(--primary);font-weight:600;">
-                                    🤝 If you’ll be there — let’s connect!
+                                     If you’ll be there — let’s connect!
                                 </span>
                             </div>
                         </div>
@@ -2555,7 +2591,7 @@
                 </div>
 
 
-                <!-- ══ CARD 24: Ethereum Zurich 2025 ══ -->
+                <!--  CARD 24: Ethereum Zurich 2025  -->
                 <div class="reveal"
                     style="background:var(--white);border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08);border:1px solid var(--border);">
                     <div
@@ -2565,7 +2601,7 @@
                         <div>
                             <div
                                 style="font-size:0.65rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.8);margin-bottom:5px;">
-                                University of Zurich 🇨🇭 · UZH Blockchain Center</div>
+                                University of Zurich  · UZH Blockchain Center</div>
                             <h3 style="color:#fff;font-size:1.1rem;margin:0 0 8px;line-height:1.25;">Ethereum Zurich
                                 2025</h3>
                             <div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;">
@@ -2583,7 +2619,7 @@
                         <button onclick="toggleCard('conf24')" id="conf24Btn"
                             style="background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);color:#fff;padding:8px 22px;border-radius:50px;font-size:0.82rem;font-weight:700;cursor:pointer;transition:all 0.25s;"
                             onmouseover="this.style.background='rgba(255,255,255,0.25)'"
-                            onmouseout="this.style.background='rgba(255,255,255,0.12)'">▼ View Details</button>
+                            onmouseout="this.style.background='rgba(255,255,255,0.12)'"> View Details</button>
                     </div>
                     <!-- Expandable body -->
                     <div id="conf24"
@@ -2605,36 +2641,36 @@
                                 future of <strong>#Ethereum, #Web3, #DeFi, #DAOs, #AI,</strong> and
                                 <strong>#cryptographic_security</strong>! This event brought together thought leaders,
                                 researchers, and builders from across the ecosystem to shape the next wave of blockchain
-                                innovation. 🚀
+                                innovation. 
                             </p>
 
                             <div>
-                                <h4 style="font-size:0.9rem;font-weight:700;color:var(--primary);margin-bottom:12px;">🔹
+                                <h4 style="font-size:0.9rem;font-weight:700;color:var(--primary);margin-bottom:12px;">
                                     Key Themes &amp; Insights:</h4>
                                 <div
                                     style="display:flex;flex-direction:column;gap:8px;font-size:0.82rem;color:var(--text-body);">
                                     <div style="display:flex;align-items:center;gap:10px;">
-                                        <span style="color:#2ecc71;font-size:1.1rem;">✅</span> <strong>ETHEREUM
+                                        <span style="color:#2ecc71;font-size:1.1rem;"></span> <strong>ETHEREUM
                                             SCALABILITY &amp; EXECUTION</strong>
                                     </div>
                                     <div style="display:flex;align-items:center;gap:10px;">
-                                        <span style="color:#2ecc71;font-size:1.1rem;">✅</span> <strong>ZERO-KNOWLEDGE
+                                        <span style="color:#2ecc71;font-size:1.1rem;"></span> <strong>ZERO-KNOWLEDGE
                                             &amp; PRIVACY INNOVATIONS</strong>
                                     </div>
                                     <div style="display:flex;align-items:center;gap:10px;">
-                                        <span style="color:#2ecc71;font-size:1.1rem;">✅</span> <strong>DEFI &amp;
+                                        <span style="color:#2ecc71;font-size:1.1rem;"></span> <strong>DEFI &amp;
                                             REAL-WORLD ASSET TOKENIZATION</strong>
                                     </div>
                                     <div style="display:flex;align-items:center;gap:10px;">
-                                        <span style="color:#2ecc71;font-size:1.1rem;">✅</span> <strong>DAO EVOLUTION
+                                        <span style="color:#2ecc71;font-size:1.1rem;"></span> <strong>DAO EVOLUTION
                                             &amp; GOVERNANCE MODELS</strong>
                                     </div>
                                     <div style="display:flex;align-items:center;gap:10px;">
-                                        <span style="color:#2ecc71;font-size:1.1rem;">✅</span> <strong>SECURITY &amp;
+                                        <span style="color:#2ecc71;font-size:1.1rem;"></span> <strong>SECURITY &amp;
                                             MEV MITIGATION</strong>
                                     </div>
                                     <div style="display:flex;align-items:center;gap:10px;">
-                                        <span style="color:#2ecc71;font-size:1.1rem;">✅</span> <strong>DECENTRALIZED AI
+                                        <span style="color:#2ecc71;font-size:1.1rem;"></span> <strong>DECENTRALIZED AI
                                             &amp; COMPUTE</strong>
                                     </div>
                                 </div>
@@ -2644,7 +2680,7 @@
                 </div>
 
 
-                <!-- ══ CARD 25: Institutional DeFi Night 2025 ══ -->
+                <!--  CARD 25: Institutional DeFi Night 2025  -->
                 <div class="reveal"
                     style="background:var(--white);border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08);border:1px solid var(--border);">
                     <div
@@ -2654,7 +2690,7 @@
                         <div>
                             <div
                                 style="font-size:0.65rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.8);margin-bottom:5px;">
-                                University of Zurich 🇨🇭 · UZH Blockchain Center &amp; DeFiAM</div>
+                                University of Zurich  · UZH Blockchain Center &amp; DeFiAM</div>
                             <h3 style="color:#fff;font-size:1.1rem;margin:0 0 8px;line-height:1.25;">Institutional DeFi
                                 Night 2025</h3>
                             <div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;">
@@ -2670,7 +2706,7 @@
                         <button onclick="toggleCard('conf25')" id="conf25Btn"
                             style="background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);color:#fff;padding:8px 22px;border-radius:50px;font-size:0.82rem;font-weight:700;cursor:pointer;transition:all 0.25s;"
                             onmouseover="this.style.background='rgba(255,255,255,0.25)'"
-                            onmouseout="this.style.background='rgba(255,255,255,0.12)'">▼ View Details</button>
+                            onmouseout="this.style.background='rgba(255,255,255,0.12)'"> View Details</button>
                     </div>
                     <!-- Expandable body -->
                     <div id="conf25"
@@ -2701,7 +2737,7 @@
                             <div style="text-align:center;margin-top:20px;">
                                 <span
                                     style="display:inline-block;padding:12px 24px;background:var(--cream);border:1px solid var(--cream-dark);border-radius:50px;font-size:0.85rem;color:var(--primary);font-weight:600;">
-                                    🚀 Looking forward to more innovation in the space!
+                                     Looking forward to more innovation in the space!
                                 </span>
                             </div>
                         </div>
@@ -2709,7 +2745,7 @@
                 </div>
 
 
-                <!-- ══ CARD 26: DAO Suisse Kickoff at Ethereum Zurich 2025 ══ -->
+                <!--  CARD 26: DAO Suisse Kickoff at Ethereum Zurich 2025  -->
                 <div class="reveal"
                     style="background:var(--white);border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08);border:1px solid var(--border);">
                     <div
@@ -2719,7 +2755,7 @@
                         <div>
                             <div
                                 style="font-size:0.65rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.8);margin-bottom:5px;">
-                                Zürich 🇨🇭 · DAO Suisse &amp; UZH Blockchain Center</div>
+                                Zürich  · DAO Suisse &amp; UZH Blockchain Center</div>
                             <h3 style="color:#fff;font-size:1.1rem;margin:0 0 8px;line-height:1.25;">DAO Suisse Kickoff
                                 @ Ethereum Zurich 2025</h3>
                             <div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;">
@@ -2734,7 +2770,7 @@
                         <button onclick="toggleCard('conf26')" id="conf26Btn"
                             style="background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);color:#fff;padding:8px 22px;border-radius:50px;font-size:0.82rem;font-weight:700;cursor:pointer;transition:all 0.25s;"
                             onmouseover="this.style.background='rgba(255,255,255,0.25)'"
-                            onmouseout="this.style.background='rgba(255,255,255,0.12)'">▼ View Details</button>
+                            onmouseout="this.style.background='rgba(255,255,255,0.12)'"> View Details</button>
                     </div>
                     <!-- Expandable body -->
                     <div id="conf26"
@@ -2755,16 +2791,16 @@
                             <p
                                 style="font-size:0.95rem;color:var(--text-body);line-height:1.8;margin-bottom:16px;text-align:center;max-width:800px;margin-left:auto;margin-right:auto;">
                                 <strong>Great kickoff to #Ethereum_Zürich at Drinks with #DAO Suisse last night!
-                                    🍻</strong>
+                                    </strong>
                                 <br /><br />
                                 Exciting discussions on DAOs, governance, and the future of decentralization. Thanks to
-                                <strong>#DAO_Suisse</strong> for an amazing event! 🚀
+                                <strong>#DAO_Suisse</strong> for an amazing event! 
                             </p>
 
                             <div style="text-align:center;margin-top:20px;">
                                 <span
                                     style="display:inline-block;padding:12px 24px;background:var(--cream);border:1px solid var(--cream-dark);border-radius:50px;font-size:0.85rem;color:var(--primary);font-weight:600;">
-                                    🤝 Exploring the frontiers of Decentralized Autonomous Organizations
+                                     Exploring the frontiers of Decentralized Autonomous Organizations
                                 </span>
                             </div>
                         </div>
@@ -2772,7 +2808,7 @@
                 </div>
 
 
-                <!-- ══ CARD 27: Visiting PhD Researcher at UZH ══ -->
+                <!--  CARD 27: Visiting PhD Researcher at UZH  -->
                 <div class="reveal"
                     style="background:var(--white);border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08);border:1px solid var(--border);">
                     <div
@@ -2782,7 +2818,7 @@
                         <div>
                             <div
                                 style="font-size:0.65rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.8);margin-bottom:5px;">
-                                Zürich 🇨🇭 · University of Zurich &amp; UZH Blockchain Center</div>
+                                Zürich  · University of Zurich &amp; UZH Blockchain Center</div>
                             <h3 style="color:#fff;font-size:1.1rem;margin:0 0 8px;line-height:1.25;">Visiting PhD
                                 Researcher</h3>
                             <div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;">
@@ -2799,7 +2835,7 @@
                         <button onclick="toggleCard('conf27')" id="conf27Btn"
                             style="background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);color:#fff;padding:8px 22px;border-radius:50px;font-size:0.82rem;font-weight:700;cursor:pointer;transition:all 0.25s;"
                             onmouseover="this.style.background='rgba(255,255,255,0.25)'"
-                            onmouseout="this.style.background='rgba(255,255,255,0.12)'">▼ View Details</button>
+                            onmouseout="this.style.background='rgba(255,255,255,0.12)'"> View Details</button>
                     </div>
                     <!-- Expandable body -->
                     <div id="conf27"
@@ -2832,7 +2868,7 @@
                             <div style="text-align:center;margin-top:20px;">
                                 <span
                                     style="display:inline-block;padding:12px 24px;background:var(--cream);border:1px solid var(--cream-dark);border-radius:50px;font-size:0.85rem;color:var(--primary);font-weight:600;">
-                                    🎓 Looking forward to this exciting chapter of growth and innovation!
+                                     Looking forward to this exciting chapter of growth and innovation!
                                 </span>
                             </div>
                         </div>
@@ -2840,7 +2876,7 @@
                 </div>
 
 
-                <!-- ══ CARD 28: Visiting Researcher at Nottingham Law School ══ -->
+                <!--  CARD 28: Visiting Researcher at Nottingham Law School  -->
                 <div class="reveal"
                     style="background:var(--white);border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08);border:1px solid var(--border);">
                     <div
@@ -2850,7 +2886,7 @@
                         <div>
                             <div
                                 style="font-size:0.65rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.8);margin-bottom:5px;">
-                                Nottingham 🇬🇧 · Nottingham Trent University</div>
+                                Nottingham  · Nottingham Trent University</div>
                             <h3 style="color:#fff;font-size:1.1rem;margin:0 0 8px;line-height:1.25;">Visiting Researcher
                             </h3>
                             <div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;">
@@ -2864,7 +2900,7 @@
                         <button onclick="toggleCard('conf28')" id="conf28Btn"
                             style="background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);color:#fff;padding:8px 22px;border-radius:50px;font-size:0.82rem;font-weight:700;cursor:pointer;transition:all 0.25s;"
                             onmouseover="this.style.background='rgba(255,255,255,0.25)'"
-                            onmouseout="this.style.background='rgba(255,255,255,0.12)'">▼ View Details</button>
+                            onmouseout="this.style.background='rgba(255,255,255,0.12)'"> View Details</button>
                     </div>
                     <!-- Expandable body -->
                     <div id="conf28"
@@ -2887,7 +2923,7 @@
                             <div style="text-align:center;margin-top:20px;">
                                 <span
                                     style="display:inline-block;padding:12px 24px;background:var(--cream);border:1px solid var(--cream-dark);border-radius:50px;font-size:0.85rem;color:var(--primary);font-weight:600;">
-                                    🙏 Deeply grateful to Nottingham Trent University for their unwavering support!
+                                     Deeply grateful to Nottingham Trent University for their unwavering support!
                                 </span>
                             </div>
                         </div>
@@ -2895,7 +2931,7 @@
                 </div>
 
 
-                <!-- ══ CARD 29: Harmonised Standards in EU Digital Regulation ══ -->
+                <!--  CARD 29: Harmonised Standards in EU Digital Regulation  -->
                 <div class="reveal"
                     style="background:var(--white);border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08);border:1px solid var(--border);">
                     <div
@@ -2905,7 +2941,7 @@
                         <div>
                             <div
                                 style="font-size:0.65rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.8);margin-bottom:5px;">
-                                Padua 🇮🇹 · DiPIC UniPD, EUI, Maastricht &amp; Tübingen</div>
+                                Padua  · DiPIC UniPD, EUI, Maastricht &amp; Tübingen</div>
                             <h3 style="color:#fff;font-size:1.1rem;margin:0 0 8px;line-height:1.25;">Harmonised
                                 Standards in EU Digital Regulation</h3>
                             <div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;">
@@ -2923,7 +2959,7 @@
                         <button onclick="toggleCard('conf29')" id="conf29Btn"
                             style="background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);color:#fff;padding:8px 22px;border-radius:50px;font-size:0.82rem;font-weight:700;cursor:pointer;transition:all 0.25s;"
                             onmouseover="this.style.background='rgba(255,255,255,0.25)'"
-                            onmouseout="this.style.background='rgba(255,255,255,0.12)'">▼ View Details</button>
+                            onmouseout="this.style.background='rgba(255,255,255,0.12)'"> View Details</button>
                     </div>
                     <!-- Expandable body -->
                     <div id="conf29"
@@ -2948,30 +2984,30 @@
                             </p>
 
                             <div>
-                                <h4 style="font-size:0.9rem;font-weight:700;color:var(--primary);margin-bottom:12px;">🔹
+                                <h4 style="font-size:0.9rem;font-weight:700;color:var(--primary);margin-bottom:12px;">
                                     Over the course of two days, we explored:</h4>
                                 <div
                                     style="display:flex;flex-direction:column;gap:8px;font-size:0.82rem;color:var(--text-body);">
                                     <div style="display:flex;align-items:flex-start;gap:10px;">
-                                        <span style="color:#3498db;font-size:1.1rem;line-height:1;">🔹</span>
+                                        <span style="color:#3498db;font-size:1.1rem;line-height:1;"></span>
                                         <span><strong>The geopolitical and ethical dimensions of AI
                                                 standards</strong>—unpacking how value-laden decisions shape technical
                                             frameworks.</span>
                                     </div>
                                     <div style="display:flex;align-items:flex-start;gap:10px;">
-                                        <span style="color:#3498db;font-size:1.1rem;line-height:1;">🔹</span>
+                                        <span style="color:#3498db;font-size:1.1rem;line-height:1;"></span>
                                         <span><strong>Legal complexities surrounding harmonized standards</strong>,
                                             particularly under the AI Act, and their impact on safeguarding fundamental
                                             rights.</span>
                                     </div>
                                     <div style="display:flex;align-items:flex-start;gap:10px;">
-                                        <span style="color:#3498db;font-size:1.1rem;line-height:1;">🔹</span>
+                                        <span style="color:#3498db;font-size:1.1rem;line-height:1;"></span>
                                         <span><strong>Accountability mechanisms</strong>—ensuring transparency and
                                             fairness in standard-setting, with a focus on the roles of regulatory bodies
                                             and notified institutions.</span>
                                     </div>
                                     <div style="display:flex;align-items:flex-start;gap:10px;">
-                                        <span style="color:#3498db;font-size:1.1rem;line-height:1;">🔹</span>
+                                        <span style="color:#3498db;font-size:1.1rem;line-height:1;"></span>
                                         <span><strong>The critical balance</strong> between interoperability and
                                             regulatory control in frameworks like the DMA and Data Act.</span>
                                     </div>
@@ -2981,14 +3017,14 @@
                             <p style="font-size:0.85rem;color:var(--text-body);line-height:1.8;margin-top:16px;">
                                 The discussions were rich and forward-thinking, emphasizing the role of harmonized
                                 standards as a cornerstone of trust and innovation in the EU's digital transformation. A
-                                perfect convergence of expertise, collaboration, and strategic thinking! 💡
+                                perfect convergence of expertise, collaboration, and strategic thinking! 
                             </p>
                         </div>
                     </div>
                 </div>
 
 
-                <!-- ══ CARD 30: Dubai Court Precedent on Crypto Salaries ══ -->
+                <!--  CARD 30: Dubai Court Precedent on Crypto Salaries  -->
                 <div class="reveal"
                     style="background:var(--white);border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08);border:1px solid var(--border);">
                     <div
@@ -2998,7 +3034,7 @@
                         <div>
                             <div
                                 style="font-size:0.65rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.8);margin-bottom:5px;">
-                                Dubai 🇦🇪 · Court of First Instance</div>
+                                Dubai  · Court of First Instance</div>
                             <h3 style="color:#fff;font-size:1.1rem;margin:0 0 8px;line-height:1.25;">Dubai Court
                                 Precedent: Crypto for Salaries</h3>
                             <div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;">
@@ -3014,19 +3050,19 @@
                         <button onclick="toggleCard('conf30')" id="conf30Btn"
                             style="background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);color:#fff;padding:8px 22px;border-radius:50px;font-size:0.82rem;font-weight:700;cursor:pointer;transition:all 0.25s;"
                             onmouseover="this.style.background='rgba(255,255,255,0.25)'"
-                            onmouseout="this.style.background='rgba(255,255,255,0.12)'">▼ View Details</button>
+                            onmouseout="this.style.background='rgba(255,255,255,0.12)'"> View Details</button>
                     </div>
                     <!-- Expandable body -->
                     <div id="conf30"
                         style="max-height:0;overflow:hidden;transition:max-height 0.55s cubic-bezier(0.4,0,0.2,1);">
                         <!-- Single photo display -->
-                        <img loading="lazy" src="../images/dubai_crypto_ruling.jpg" alt="Dubai Court Metaverse/Crypto Concept"
-                            style="width:100%;height:auto;display:block;" />
+                        <img loading="lazy" src="../images/dubai_crypto_ruling.jpg"
+                            alt="Dubai Court Metaverse/Crypto Concept" style="width:100%;height:auto;display:block;" />
 
                         <div style="padding:24px 28px;">
                             <h4
                                 style="font-size:1.1rem;font-weight:700;color:var(--primary);margin-bottom:12px;text-align:center;">
-                                🚨 Dubai Court Sets a New Precedent: Cryptocurrency Accepted for Salary Payments 🚨
+                                 Dubai Court Sets a New Precedent: Cryptocurrency Accepted for Salary Payments 
                             </h4>
                             <p style="font-size:0.9rem;color:var(--text-body);line-height:1.7;margin-bottom:16px;">
                                 In a groundbreaking ruling, the <strong>Dubai Court of First Instance</strong> has
@@ -3072,7 +3108,7 @@
                 </div>
 
 
-                <!-- ══ CARD 31: Mapping Grey Areas Crypto Workshop ══ -->
+                <!--  CARD 31: Mapping Grey Areas Crypto Workshop  -->
                 <div class="reveal"
                     style="background:var(--white);border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08);border:1px solid var(--border);">
                     <div
@@ -3082,7 +3118,7 @@
                         <div>
                             <div
                                 style="font-size:0.65rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.8);margin-bottom:5px;">
-                                Nottingham 🇬🇧 · Nottingham Trent University</div>
+                                Nottingham  · Nottingham Trent University</div>
                             <h3 style="color:#fff;font-size:1.1rem;margin:0 0 8px;line-height:1.25;">Mapping Grey Areas
                                 in Crypto Firm Failures</h3>
                             <div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;">
@@ -3100,7 +3136,7 @@
                         <button onclick="toggleCard('conf31')" id="conf31Btn"
                             style="background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);color:#fff;padding:8px 22px;border-radius:50px;font-size:0.82rem;font-weight:700;cursor:pointer;transition:all 0.25s;"
                             onmouseover="this.style.background='rgba(255,255,255,0.25)'"
-                            onmouseout="this.style.background='rgba(255,255,255,0.12)'">▼ View Details</button>
+                            onmouseout="this.style.background='rgba(255,255,255,0.12)'"> View Details</button>
                     </div>
                     <!-- Expandable body -->
                     <div id="conf31"
@@ -3109,14 +3145,16 @@
                         <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;">
                             <img loading="lazy" src="../images/crypto_workshop_table.png" alt="Workshop Session"
                                 style="width:100%;height:220px;object-fit:cover;" />
-                            <img loading="lazy" src="../images/crypto_workshop_group1.png" alt="Workshop Group Photo Seated"
+                            <img loading="lazy" src="../images/crypto_workshop_group1.png"
+                                alt="Workshop Group Photo Seated"
                                 style="width:100%;height:220px;object-fit:cover;object-position:top;" />
-                            <img loading="lazy" src="../images/crypto_workshop_group2.png" alt="Workshop Group Photo Standing"
+                            <img loading="lazy" src="../images/crypto_workshop_group2.png"
+                                alt="Workshop Group Photo Standing"
                                 style="width:100%;height:220px;object-fit:cover;object-position:top;" />
                         </div>
                         <div style="padding:24px 28px;">
                             <p style="font-size:0.95rem;color:var(--text-body);line-height:1.8;margin-bottom:16px;">
-                                🌐 I had the privilege of attending the <strong>"Mapping Grey Areas in International
+                                 I had the privilege of attending the <strong>"Mapping Grey Areas in International
                                     Legal Approaches to The Failure of Crypto Firms"</strong> workshop on August 12-13,
                                 2024, hosted at Nottingham Trent University. This event, supported by the Arts and
                                 Humanities Research Council (AHRC), was a deep dive into the complexities surrounding
@@ -3141,7 +3179,7 @@
                             <div style="text-align:center;margin-top:20px;">
                                 <span
                                     style="display:inline-block;padding:12px 24px;background:var(--cream);border:1px solid var(--cream-dark);border-radius:50px;font-size:0.85rem;color:var(--primary);font-weight:600;">
-                                    🤝 A big thanks to the event team, speakers, and fellow attendees!
+                                     A big thanks to the event team, speakers, and fellow attendees!
                                 </span>
                             </div>
                         </div>
@@ -3149,7 +3187,7 @@
                 </div>
 
 
-                <!-- ══ CARD 32: Academic Adventure at NLS ══ -->
+                <!--  CARD 32: Academic Adventure at NLS  -->
                 <div class="reveal"
                     style="background:var(--white);border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08);border:1px solid var(--border);">
                     <div
@@ -3159,7 +3197,7 @@
                         <div>
                             <div
                                 style="font-size:0.65rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.8);margin-bottom:5px;">
-                                Nottingham 🇬🇧 · Nottingham Law School</div>
+                                Nottingham  · Nottingham Law School</div>
                             <h3 style="color:#fff;font-size:1.1rem;margin:0 0 8px;line-height:1.25;">Academic Adventure
                                 at NLS</h3>
                             <div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;">
@@ -3176,7 +3214,7 @@
                         <button onclick="toggleCard('conf32')" id="conf32Btn"
                             style="background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);color:#fff;padding:8px 22px;border-radius:50px;font-size:0.82rem;font-weight:700;cursor:pointer;transition:all 0.25s;"
                             onmouseover="this.style.background='rgba(255,255,255,0.25)'"
-                            onmouseout="this.style.background='rgba(255,255,255,0.12)'">▼ View Details</button>
+                            onmouseout="this.style.background='rgba(255,255,255,0.12)'"> View Details</button>
                     </div>
                     <!-- Expandable body -->
                     <div id="conf32"
@@ -3193,7 +3231,7 @@
                         <div style="padding:24px 28px;">
                             <h4
                                 style="font-size:1.1rem;font-weight:700;color:var(--primary);margin-bottom:12px;text-align:center;">
-                                🚀 Thrilled to Share My Latest Academic Adventure! 🚀
+                                 Thrilled to Share My Latest Academic Adventure! 
                             </h4>
                             <p style="font-size:0.95rem;color:var(--text-body);line-height:1.8;margin-bottom:16px;">
                                 I am delighted to announce that I have commenced a new chapter as a <strong>Visiting
@@ -3211,7 +3249,7 @@
                             <div style="text-align:center;margin-top:20px;">
                                 <span
                                     style="display:inline-block;padding:12px 24px;background:var(--cream);border:1px solid var(--cream-dark);border-radius:50px;font-size:0.85rem;color:var(--primary);font-weight:600;">
-                                    🌍 From Italy 🇮🇹 to the UK 🇬🇧
+                                     From Italy  to the UK 
                                 </span>
                             </div>
                         </div>
@@ -3219,7 +3257,7 @@
                 </div>
 
 
-                <!-- ══ CARD 33: AI Governance and Digital Security Conference ══ -->
+                <!--  CARD 33: AI Governance and Digital Security Conference  -->
                 <div class="reveal"
                     style="background:var(--white);border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08);border:1px solid var(--border);">
                     <div
@@ -3229,7 +3267,7 @@
                         <div>
                             <div
                                 style="font-size:0.65rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.8);margin-bottom:5px;">
-                                Manchester 🇬🇧 · Exchange Chambers</div>
+                                Manchester  · Exchange Chambers</div>
                             <h3 style="color:#fff;font-size:1.1rem;margin:0 0 8px;line-height:1.25;">AI Governance and
                                 Digital Security Conference</h3>
                             <div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;">
@@ -3246,7 +3284,7 @@
                         <button onclick="toggleCard('conf33')" id="conf33Btn"
                             style="background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);color:#fff;padding:8px 22px;border-radius:50px;font-size:0.82rem;font-weight:700;cursor:pointer;transition:all 0.25s;"
                             onmouseover="this.style.background='rgba(255,255,255,0.25)'"
-                            onmouseout="this.style.background='rgba(255,255,255,0.12)'">▼ View Details</button>
+                            onmouseout="this.style.background='rgba(255,255,255,0.12)'"> View Details</button>
                     </div>
                     <!-- Expandable body -->
                     <div id="conf33"
@@ -3264,7 +3302,7 @@
                         </div>
                         <div style="padding:24px 28px;">
                             <p style="font-size:0.95rem;color:var(--text-body);line-height:1.8;margin-bottom:16px;">
-                                🌟 I had the privilege of attending the <strong>"AI Governance and Digital
+                                 I had the privilege of attending the <strong>"AI Governance and Digital
                                     Security"</strong> conference on July 10th, 2024, at Exchange Chambers, Manchester.
                                 Organized by the University of Manchester and Indiana University in collaboration with
                                 The Manchester Business and Property Courts Forum, this event was a fantastic
@@ -3278,24 +3316,24 @@
                                 <div
                                     style="display:flex;flex-direction:column;gap:12px;font-size:0.9rem;color:var(--text-body);">
                                     <div style="display:flex;align-items:flex-start;gap:10px;">
-                                        <span style="color:var(--accent);font-size:1.1rem;line-height:1;">🎙️</span>
+                                        <span style="color:var(--accent);font-size:1.1rem;line-height:1;">️</span>
                                         <span><strong>Keynote speeches</strong> on global approaches to cybersecurity
                                             and the role of private actors in AI regulation.</span>
                                     </div>
                                     <div style="display:flex;align-items:flex-start;gap:10px;">
-                                        <span style="color:var(--accent);font-size:1.1rem;line-height:1;">👥</span>
+                                        <span style="color:var(--accent);font-size:1.1rem;line-height:1;"></span>
                                         <span><strong>Panel discussions</strong> on AI regulation, exploring both
                                             horizontal and sectoral approaches, and the specific impacts on healthcare,
                                             finance, and energy sectors.</span>
                                     </div>
                                     <div style="display:flex;align-items:flex-start;gap:10px;">
-                                        <span style="color:var(--accent);font-size:1.1rem;line-height:1;">🔒</span>
+                                        <span style="color:var(--accent);font-size:1.1rem;line-height:1;"></span>
                                         <span><strong>In-depth sessions on cybersecurity</strong>, focusing on
                                             regulatory compliance strategies, digital resilience, and international law
                                             in cyber operations.</span>
                                     </div>
                                     <div style="display:flex;align-items:flex-start;gap:10px;">
-                                        <span style="color:var(--accent);font-size:1.1rem;line-height:1;">🔗</span>
+                                        <span style="color:var(--accent);font-size:1.1rem;line-height:1;"></span>
                                         <span><strong>Lectures on blockchain technology</strong> discussing intermediary
                                             liability in the age of algorithms and the challenges of establishing
                                             priority for secured interests using blockchain.</span>
@@ -3315,7 +3353,7 @@
                 </div>
 
 
-                <!-- ══ CARD 34: ITLL Summer School on NFTs and Metaverses ══ -->
+                <!--  CARD 34: ITLL Summer School on NFTs and Metaverses  -->
                 <div class="reveal"
                     style="background:var(--white);border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08);border:1px solid var(--border);">
                     <div
@@ -3325,7 +3363,7 @@
                         <div>
                             <div
                                 style="font-size:0.65rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.8);margin-bottom:5px;">
-                                Italy 🇮🇹 · Venice & Villa Bolasco</div>
+                                Italy  · Venice & Villa Bolasco</div>
                             <h3 style="color:#fff;font-size:1.1rem;margin:0 0 8px;line-height:1.25;">ITLL Summer School
                                 on NFTs, Metaverses, and the Law</h3>
                             <div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;">
@@ -3341,21 +3379,21 @@
                         <button onclick="toggleCard('conf34')" id="conf34Btn"
                             style="background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);color:#fff;padding:8px 22px;border-radius:50px;font-size:0.82rem;font-weight:700;cursor:pointer;transition:all 0.25s;"
                             onmouseover="this.style.background='rgba(255,255,255,0.25)'"
-                            onmouseout="this.style.background='rgba(255,255,255,0.12)'">▼ View Details</button>
+                            onmouseout="this.style.background='rgba(255,255,255,0.12)'"> View Details</button>
                     </div>
                     <!-- Expandable body -->
                     <div id="conf34"
                         style="max-height:0;overflow:hidden;transition:max-height 0.55s cubic-bezier(0.4,0,0.2,1);">
                         <!-- 2-photo display -->
                         <div style="display:grid;grid-template-columns:1fr 1fr;gap:0;">
-                            <img loading="lazy" src="../images/nfts_summer_school_1.jpg" alt="Summer School Lecture Hall"
-                                style="width:100%;height:350px;object-fit:cover;" />
-                            <img loading="lazy" src="../images/nfts_summer_school_2.png" alt="Metaverse Presentation Slide"
-                                style="width:100%;height:350px;object-fit:cover;" />
+                            <img loading="lazy" src="../images/nfts_summer_school_1.jpg"
+                                alt="Summer School Lecture Hall" style="width:100%;height:350px;object-fit:cover;" />
+                            <img loading="lazy" src="../images/nfts_summer_school_2.png"
+                                alt="Metaverse Presentation Slide" style="width:100%;height:350px;object-fit:cover;" />
                         </div>
                         <div style="padding:24px 28px;">
                             <p style="font-size:0.95rem;color:var(--text-body);line-height:1.8;margin-bottom:16px;">
-                                🚨 I am delighted to have participated in the 5-day Summer School organized by
+                                 I am delighted to have participated in the 5-day Summer School organized by
                                 <strong>ITLL - Innovation and Technology Law Lab</strong> on NFTs, Metaverses, and the
                                 Law.
                             </p>
@@ -3363,15 +3401,15 @@
                             <p style="font-size:0.9rem;color:var(--text-body);line-height:1.8;margin-bottom:16px;">
                                 The program offered a comprehensive and insightful exploration of the legal aspects of
                                 NFTs and Metaverses, presented by esteemed professionals in the field. The summer school
-                                also featured a fascinating field trip to Venice 🏞️ and Villa Bolasco 🏚️.
+                                also featured a fascinating field trip to Venice ️ and Villa Bolasco ️.
                             </p>
 
                             <p style="font-size:0.9rem;color:var(--text-body);line-height:1.8;margin-bottom:16px;">
                                 I would like to extend my special gratitude to Professor Claudia Sandei and her team for
-                                their outstanding efforts in organizing this summer school 🎉. Their expertise,
-                                dedication, and attention to detail made the program truly enriching and memorable 📝. I
+                                their outstanding efforts in organizing this summer school . Their expertise,
+                                dedication, and attention to detail made the program truly enriching and memorable . I
                                 look forward to the opportunity to participate in future programs organized by this
-                                talented team, exploring new and emerging areas of technology law 🚀🔍.
+                                talented team, exploring new and emerging areas of technology law .
                             </p>
 
                             <p
@@ -3384,7 +3422,7 @@
                 </div>
 
 
-                <!-- ══ CARD 35: House Passes FIT21 Act ══ -->
+                <!--  CARD 35: House Passes FIT21 Act  -->
                 <div class="reveal"
                     style="background:var(--white);border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08);border:1px solid var(--border);">
                     <div
@@ -3394,7 +3432,7 @@
                         <div>
                             <div
                                 style="font-size:0.65rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.8);margin-bottom:5px;">
-                                United States 🇺🇸 · Legislation</div>
+                                United States  · Legislation</div>
                             <h3 style="color:#fff;font-size:1.1rem;margin:0 0 8px;line-height:1.25;">House Passes FIT21
                                 Act: A Game-Changer for Digital Assets</h3>
                             <div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;">
@@ -3410,7 +3448,7 @@
                         <button onclick="toggleCard('conf35')" id="conf35Btn"
                             style="background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);color:#fff;padding:8px 22px;border-radius:50px;font-size:0.82rem;font-weight:700;cursor:pointer;transition:all 0.25s;"
                             onmouseover="this.style.background='rgba(255,255,255,0.25)'"
-                            onmouseout="this.style.background='rgba(255,255,255,0.12)'">▼ View Details</button>
+                            onmouseout="this.style.background='rgba(255,255,255,0.12)'"> View Details</button>
                     </div>
                     <!-- Expandable body -->
                     <div id="conf35"
@@ -3422,7 +3460,7 @@
                         <div style="padding:24px 28px;">
                             <h4
                                 style="font-size:1.1rem;font-weight:700;color:var(--primary);margin-bottom:12px;text-align:center;">
-                                ⚖️ House Passes FIT21 Act: A Game-Changer for the U.S. Digital Asset Ecosystem ⚖️
+                                ️ House Passes FIT21 Act: A Game-Changer for the U.S. Digital Asset Ecosystem ️
                             </h4>
                             <p style="font-size:0.95rem;color:var(--text-body);line-height:1.8;margin-bottom:16px;">
                                 The U.S. House of Representatives has overwhelmingly passed H.R. 4763, the
@@ -3470,19 +3508,19 @@
                                 <ul
                                     style="list-style-type:none;padding-left:0;margin-bottom:16px;font-size:0.9rem;color:var(--text-body);display:flex;flex-direction:column;gap:12px;">
                                     <li style="display:flex;align-items:flex-start;gap:8px;">
-                                        <span style="color:#28a745;font-weight:bold;">✓</span>
+                                        <span style="color:#28a745;font-weight:bold;"></span>
                                         <span><strong>Innovation and Leadership:</strong> Positions the U.S. as a leader
                                             in the global digital asset market, fostering innovation and technological
                                             progress.</span>
                                     </li>
                                     <li style="display:flex;align-items:flex-start;gap:8px;">
-                                        <span style="color:#28a745;font-weight:bold;">✓</span>
+                                        <span style="color:#28a745;font-weight:bold;"></span>
                                         <span><strong>Enhanced Security:</strong> Ensures comprehensive customer
                                             disclosures, asset safeguarding, and operational requirements, promoting a
                                             secure digital asset ecosystem.</span>
                                     </li>
                                     <li style="display:flex;align-items:flex-start;gap:8px;">
-                                        <span style="color:#28a745;font-weight:bold;">✓</span>
+                                        <span style="color:#28a745;font-weight:bold;"></span>
                                         <span><strong>Future-Proof Finance:</strong> Establishes a clear regulatory
                                             framework, securing the U.S.’s role at the forefront of financial innovation
                                             and stability in the digital asset market.</span>
@@ -3533,10 +3571,10 @@
             var isOpen = el.style.maxHeight && el.style.maxHeight !== '0px';
             if (isOpen) {
                 el.style.maxHeight = '0px';
-                btn.textContent = '▼ View Details';
+                btn.textContent = ' View Details';
             } else {
                 el.style.maxHeight = el.scrollHeight + 'px';
-                btn.textContent = '▲ Collapse';
+                btn.textContent = ' Collapse';
             }
         }
     </script>
@@ -3546,74 +3584,80 @@
         <div class="container reveal">
             <h2 style="color:#fff;font-size:clamp(1.4rem,2.5vw,2rem);margin-bottom:14px;">Ready to Work Together?
             </h2>
-            <p style="color:rgba(255,255,255,0.75);margin-bottom:28px;">Book a free initial consultation with Shan Ali
-                for any FinTech, Blockchain, or Corporate legal matter.</p>
-            <a href="contact.html" class="btn btn-accent">📅 Book A Consultation</a>
+            <p style="color:rgba(255,255,255,0.75);margin-bottom:28px;">Contact Shan Ali for any FinTech, Blockchain, or
+                Corporate legal matter.</p>
         </div>
     </section>
 
     <!-- FOOTER -->
     <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-col">
-          <div class="footer-shield">S</div>
-          <div class="footer-logo-name">SHAN ALI</div>
-          <p class="footer-desc">FinTech, Web3 &amp; Corporate Legal Counsel — PhD Fellow in Blockchain Law — providing
-            expert legal services in Pakistan and internationally.</p>
-          <div class="social-links" style="margin-top:24px;">
-            <a href="https://www.linkedin.com/in/shan-ali-blockchain/" class="social-link" aria-label="LinkedIn"
-              target="_blank">in</a>
-          </div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-shield">S</div>
+                    <div class="footer-logo-name">SHAN ALI</div>
+                    <p class="footer-desc" data-i18n="footer-desc">FinTech, Web3 &amp; Corporate Legal Counsel — PhD
+                        Fellow in Blockchain Law —
+                        providing
+                        expert legal services in Pakistan and internationally.</p>
+                    <div class="social-links" style="margin-top:24px;">
+                        <a href="https://www.linkedin.com/in/shan-ali-blockchain/" class="social-link"
+                            aria-label="LinkedIn" target="_blank">in</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer-quick-links">Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="../index.html" class="footer-link" data-i18n="nav-home">Home</a>
+                        <a href="about.html" class="footer-link" data-i18n="nav-about">About Me</a>
+                        <a href="practice-areas.html" class="footer-link" data-i18n="nav-practice">Practice Areas</a>
+                        <a href="education.html" class="footer-link" data-i18n="nav-education">Education &
+                            Achievements</a>
+                        <a href="conferences.html" class="footer-link" data-i18n="nav-conferences">Conferences</a>
+                        <a href="international.html" class="footer-link" data-i18n="nav-research">International &
+                            Research</a>
+                        <a href="publications.html" class="footer-link" data-i18n="nav-publications">Publications</a>
+                        <a href="gallery.html" class="footer-link" data-i18n="nav-gallery">Gallery</a>
+                        <a href="courses.html" class="footer-link" data-i18n="nav-courses">Courses</a>
+                        <a href="contact.html" class="footer-link" data-i18n="nav-contact">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer-courts">Courts &amp; Affiliations</h4>
+                    <div class="footer-links">
+                        <a href="https://www.supremecourt.gov.pk" target="_blank" class="footer-link">Supreme Court of
+                            Pakistan</a>
+                        <a href="#" class="footer-link">Islamabad High Court</a>
+                        <a href="#" class="footer-link">Islamabad Bar Council</a>
+                        <a href="#" class="footer-link">Islamabad High Court Bar Association</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer-contact">Contact</h4>
+                    <div class="footer-contact-item">
+                        <span class="footer-contact-icon"></span>
+                        <span>Islamabad, Pakistan</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span class="footer-contact-icon"></span>
+                        <a href="https://www.linkedin.com/in/shan-ali-blockchain/" style="color:inherit;"
+                            target="_blank">LinkedIn</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span class="footer-contact-icon"></span>
+                        <a href="mailto:drusmanka00786@gmail.com" style="color:inherit;">drusmanka00786@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span data-i18n="footer-rights">© 2025 Shan Ali. FinTech &amp; Blockchain Legal Counsel. All rights
+                    reserved.</span>
+                <span>Islamabad, Pakistan</span>
+            </div>
         </div>
-        <div class="footer-col">
-          <h4>Quick Links</h4>
-          <div class="footer-links">
-            <a href="../index.html" class="footer-link">Home</a>
-            <a href="about.html" class="footer-link">About Me</a>
-            <a href="practice-areas.html" class="footer-link">Practice Areas</a>
-            <a href="education.html" class="footer-link">Education & Achievements</a>
-            <a href="conferences.html" class="footer-link">Conferences</a>
-            <a href="international.html" class="footer-link">International & Research</a>
-            <a href="publications.html" class="footer-link">Publications</a>
-            <a href="gallery.html" class="footer-link">Gallery</a>
-            <a href="courses.html" class="footer-link">Courses</a>
-            <a href="contact.html" class="footer-link">Contact</a>
-          </div>
-        </div>
-        <div class="footer-col">
-          <h4>Courts &amp; Affiliations</h4>
-          <div class="footer-links">
-            <a href="https://www.supremecourt.gov.pk" target="_blank" class="footer-link">Supreme Court of Pakistan</a>
-            <a href="#" class="footer-link">Islamabad High Court</a>
-            <a href="#" class="footer-link">Islamabad Bar Council</a>
-            <a href="#" class="footer-link">Islamabad High Court Bar Association</a>
-          </div>
-        </div>
-        <div class="footer-col">
-          <h4>Contact</h4>
-          <div class="footer-contact-item">
-            <span class="footer-contact-icon">&#128205;</span>
-            <span>Islamabad, Pakistan</span>
-          </div>
-          <div class="footer-contact-item">
-            <span class="footer-contact-icon">&#128279;</span>
-            <a href="https://www.linkedin.com/in/shan-ali-blockchain/" style="color:inherit;"
-              target="_blank">LinkedIn</a>
-          </div>
-          <div class="footer-contact-item">
-            <span class="footer-contact-icon">&#9993;</span>
-            <a href="mailto:drusmanka00786@gmail.com" style="color:inherit;">drusmanka00786@gmail.com</a>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span>© 2025 Shan Ali. FinTech &amp; Blockchain Legal Counsel. All rights reserved.</span>
-        <span>Islamabad, Pakistan</span>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
+    <script src="../js/i18n.js"></script>
     <script src="../js/main.js"></script>
 </body>
 

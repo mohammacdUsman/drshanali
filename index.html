@@ -8,8 +8,8 @@
   <meta name="description"
     content="Shan Ali — PhD Fellow in Blockchain Law | FinTech, Web3 &amp; Corporate Legal Counsel | DeFi, Digital Asset &amp; Cross-Border Compliance | Licensed Attorney, Islamabad." />
   <link rel="stylesheet" href="css/styles.css" />
-  <link rel="icon"
-    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖</text></svg>" />
+   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
   <style>
     /* === HERO === */
     .hero {
@@ -357,7 +357,7 @@
     }
 
     .about-list li::before {
-      content: "✓";
+      content: "";
       color: var(--accent);
       font-weight: 700;
     }
@@ -828,6 +828,9 @@
         transform: none;
       }
     }
+
+    
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   </style>
   <script type="application/ld+json">
   {
@@ -905,32 +908,32 @@
         </a>
         <nav>
           <ul class="nav-list">
-            <li><a href="index.html" class="nav-link active">Home</a></li>
-            <li><a href="pages/about.html" class="nav-link">About Me</a></li>
+            <li><a href="index.html" class="nav-link active" data-i18n="nav-home">Home</a></li>
+            <li><a href="pages/about.html" class="nav-link" data-i18n="nav-about">About Me</a></li>
             <li class="has-mega">
-              <a href="pages/practice-areas.html" class="nav-link">Practice Areas ▾</a>
+              <a href="pages/practice-areas.html" class="nav-link" data-i18n="nav-practice">Practice Areas</a>
               <div class="mega-menu">
                 <div class="mega-col">
-                  <h4>Digital Law</h4>
-                  <a href="pages/practice-areas.html" class="mega-link">FinTech &amp; Blockchain Law</a>
-                  <a href="pages/practice-areas.html" class="mega-link">DeFi &amp; Digital Assets</a>
-                  <a href="pages/practice-areas.html" class="mega-link">AML / KYC Compliance</a>
+                  <h4 data-i18n="mega-digital">Digital Law</h4>
+                  <a href="pages/fintech-blockchain.html" class="mega-link">FinTech &amp; Blockchain Law</a>
+                  <a href="pages/defi-digital-assets.html" class="mega-link">DeFi &amp; Digital Assets</a>
+                  <a href="pages/aml-kyc-compliance.html" class="mega-link">AML / KYC Compliance</a>
                 </div>
                 <div class="mega-col">
-                  <h4>General Practice</h4>
-                  <a href="pages/practice-areas.html" class="mega-link">Corporate Law</a>
-                  <a href="pages/practice-areas.html" class="mega-link">Civil Litigation</a>
-                  <a href="pages/practice-areas.html" class="mega-link">Criminal Law</a>
+                  <h4 data-i18n="mega-general">General Practice</h4>
+                  <a href="pages/corporate-law.html" class="mega-link">Corporate Law</a>
+                  <a href="pages/civil-litigation.html" class="mega-link">Civil Litigation</a>
+                  <a href="pages/criminal-law.html" class="mega-link">Criminal Law</a>
                 </div>
               </div>
             </li>
-            <li><a href="pages/international.html" class="nav-link">Research</a></li>
-            <li><a href="pages/publications.html" class="nav-link">Publications</a></li>
-            <li><a href="pages/education.html" class="nav-link">Education</a></li>
-            <li><a href="pages/conferences.html" class="nav-link">Conferences</a></li>
-            <li><a href="pages/gallery.html" class="nav-link">Gallery</a></li>
-            <li><a href="pages/courses.html" class="nav-link">Courses</a></li>
-            <li><a href="pages/contact.html" class="nav-link">Contact</a></li>
+            <li><a href="pages/international.html" class="nav-link" data-i18n="nav-research">Research</a></li>
+            <li><a href="pages/publications.html" class="nav-link" data-i18n="nav-publications">Publications</a></li>
+            <li><a href="pages/education.html" class="nav-link" data-i18n="nav-education">Education</a></li>
+            <li><a href="pages/conferences.html" class="nav-link" data-i18n="nav-conferences">Conferences</a></li>
+            <li><a href="pages/gallery.html" class="nav-link" data-i18n="nav-gallery">Gallery</a></li>
+            <li><a href="pages/courses.html" class="nav-link" data-i18n="nav-courses">Courses</a></li>
+            <li><a href="pages/contact.html" class="nav-link" data-i18n="nav-contact">Contact</a></li>
           </ul>
         </nav>
         <button class="hamburger" id="hamburger" aria-label="Menu">
@@ -942,49 +945,50 @@
 
   <!-- Mobile Menu -->
   <div class="mobile-menu" id="mobileMenu">
-    <a href="index.html" class="mobile-menu-link">Home</a>
-    <a href="pages/about.html" class="mobile-menu-link">About Me</a>
-    <a href="pages/practice-areas.html" class="mobile-menu-link">Practice Areas</a>
-    <a href="pages/international.html" class="mobile-menu-link">Research</a>
-    <a href="pages/publications.html" class="mobile-menu-link">Publications</a>
-    <a href="pages/education.html" class="mobile-menu-link">Education</a>
-    <a href="pages/conferences.html" class="mobile-menu-link">Conferences</a>
-    <a href="pages/gallery.html" class="mobile-menu-link">Gallery</a>
-    <a href="pages/courses.html" class="mobile-menu-link">Courses</a>
-    <a href="pages/contact.html" class="mobile-menu-link">Contact</a>
+    <a href="index.html" class="mobile-menu-link" data-i18n="nav-home">Home</a>
+    <a href="pages/about.html" class="mobile-menu-link" data-i18n="nav-about">About Me</a>
+    <a href="pages/practice-areas.html" class="mobile-menu-link" data-i18n="nav-practice">Practice Areas</a>
+    <a href="pages/international.html" class="mobile-menu-link" data-i18n="nav-research">Research</a>
+    <a href="pages/publications.html" class="mobile-menu-link" data-i18n="nav-publications">Publications</a>
+    <a href="pages/education.html" class="mobile-menu-link" data-i18n="nav-education">Education</a>
+    <a href="pages/conferences.html" class="mobile-menu-link" data-i18n="nav-conferences">Conferences</a>
+    <a href="pages/gallery.html" class="mobile-menu-link" data-i18n="nav-gallery">Gallery</a>
+    <a href="pages/courses.html" class="mobile-menu-link" data-i18n="nav-courses">Courses</a>
+    <a href="pages/contact.html" class="mobile-menu-link" data-i18n="nav-contact">Contact</a>
   </div>
 
-  <!-- ═══════════ HERO ═══════════ -->
+  <!--  HERO  -->
   <section class="hero">
     <div class="hero-bg"></div>
     <div class="hero-overlay"></div>
     <div class="container">
       <div class="hero-content">
-        <div class="hero-badge">⚖ Islamabad High Court Bar Associate</div>
+        <div class="hero-badge" data-i18n="hero-badge">Islamabad High Court Bar Associate</div>
 
         <!-- Slider -->
         <div class="hero-slider">
           <div class="hero-slide active">
-            <h1>Navigating the<br /><span>Future of Law</span> — FinTech &amp; Blockchain</h1>
-            <p class="hero-desc">PhD Fellow in Blockchain Law. Expert legal counsel in DeFi, digital assets, Web3
+            <h1 data-i18n="hero-title-1">Navigating the<br /><span>Future of Law</span> — FinTech &amp; Blockchain</h1>
+            <p class="hero-desc" data-i18n="hero-desc-1">PhD Fellow in Blockchain Law. Expert legal counsel in DeFi,
+              digital assets, Web3
               compliance, and cross-border regulatory frameworks.</p>
           </div>
           <div class="hero-slide">
-            <h1>Corporate &amp; Commercial<br /><span>Legal Expertise</span> in Pakistan</h1>
-            <p class="hero-desc">Licensed attorney before the Islamabad High Court. Advising businesses, startups, and
+            <h1 data-i18n="hero-title-2">Corporate &amp; Commercial<br /><span>Legal Expertise</span> in Pakistan</h1>
+            <p class="hero-desc" data-i18n="hero-desc-2">Licensed attorney before the Islamabad High Court. Advising
+              businesses, startups, and
               institutions on corporate law, AML compliance, and FinTech regulation.</p>
           </div>
           <div class="hero-slide">
-            <h1>Scholarly Research &amp;<br /><span>International</span> Perspective</h1>
-            <p class="hero-desc">13+ peer-reviewed publications. Research Fellowships at University of Zurich &amp;
+            <h1 data-i18n="hero-title-3">Scholarly Research &amp;<br /><span>International</span> Perspective</h1>
+            <p class="hero-desc" data-i18n="hero-desc-3">13+ peer-reviewed publications. Research Fellowships at
+              University of Zurich &amp;
               visiting researcher at institutions across Europe — bringing global insight to every case.</p>
           </div>
         </div>
 
         <div class="hero-actions">
-
-          <a href="pages/contact.html" class="btn btn-accent">📅 Book A Consultation</a>
-          <a href="pages/about.html" class="btn btn-outline">Learn More →</a>
+          <a href="pages/about.html" class="btn btn-outline" data-i18n="learn-more">Learn More →</a>
         </div>
 
         <div class="hero-dots">
@@ -1000,7 +1004,7 @@
     </div>
   </section>
 
-  <!-- ═══════════ TRUST BADGES ═══════════ -->
+  <!--  TRUST BADGES  -->
   <section class="marquee-container" aria-label="Trust Badges">
     <div class="marquee-content">
       <div class="trust-badge">
@@ -1008,14 +1012,14 @@
           <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2"
             stroke-linecap="round" stroke-linejoin="round" fill="none" />
         </svg>
-        <span>Islamabad High Court Bar Associate</span>
+        <span data-i18n="badge-lawyer">Islamabad High Court Bar Associate</span>
       </div>
       <div class="trust-badge">
         <svg viewBox="0 0 24 24">
           <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2"
             stroke-linecap="round" stroke-linejoin="round" fill="none" />
         </svg>
-        <span>PhD Fellow — Blockchain Law</span>
+        <span data-i18n="badge-phd">PhD Fellow — Blockchain Law</span>
       </div>
       <div class="trust-badge">
         <svg viewBox="0 0 24 24">
@@ -1023,7 +1027,7 @@
           <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
             fill="none" />
         </svg>
-        <span>UZH Research Fellow — Blockchain DLT &amp; Law</span>
+        <span data-i18n="badge-uzh">UZH Research Fellow — Blockchain DLT &amp; Law</span>
       </div>
       <div class="trust-badge">
         <svg viewBox="0 0 24 24">
@@ -1031,7 +1035,7 @@
             points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
         </svg>
-        <span>Summa Cum Laude — LL.M.</span>
+        <span data-i18n="badge-honors">Summa Cum Laude — LL.M.</span>
       </div>
       <div class="trust-badge">
         <svg viewBox="0 0 24 24">
@@ -1040,7 +1044,7 @@
           <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
             stroke-linejoin="round" fill="none" />
         </svg>
-        <span>13+ Peer-Reviewed Publications</span>
+        <span data-i18n="badge-pubs">13+ Peer-Reviewed Publications</span>
       </div>
       <!-- Duplicated for seamless loop -->
       <div class="trust-badge">
@@ -1048,14 +1052,14 @@
           <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2"
             stroke-linecap="round" stroke-linejoin="round" fill="none" />
         </svg>
-        <span>Islamabad High Court Bar Associate</span>
+        <span data-i18n="badge-lawyer">Islamabad High Court Bar Associate</span>
       </div>
       <div class="trust-badge">
         <svg viewBox="0 0 24 24">
           <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2"
             stroke-linecap="round" stroke-linejoin="round" fill="none" />
         </svg>
-        <span>PhD Fellow — Blockchain Law</span>
+        <span data-i18n="badge-phd">PhD Fellow — Blockchain Law</span>
       </div>
       <div class="trust-badge">
         <svg viewBox="0 0 24 24">
@@ -1063,7 +1067,7 @@
           <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
             fill="none" />
         </svg>
-        <span>UZH Research Fellow — Blockchain DLT &amp; Law</span>
+        <span data-i18n="badge-uzh">UZH Research Fellow — Blockchain DLT &amp; Law</span>
       </div>
       <div class="trust-badge">
         <svg viewBox="0 0 24 24">
@@ -1071,7 +1075,7 @@
             points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
         </svg>
-        <span>Summa Cum Laude — LL.M.</span>
+        <span data-i18n="badge-honors">Summa Cum Laude — LL.M.</span>
       </div>
       <div class="trust-badge">
         <svg viewBox="0 0 24 24">
@@ -1080,12 +1084,12 @@
           <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
             stroke-linejoin="round" fill="none" />
         </svg>
-        <span>13+ Peer-Reviewed Publications</span>
+        <span data-i18n="badge-pubs">13+ Peer-Reviewed Publications</span>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════ ABOUT ═══════════ -->
+  <!--  ABOUT  -->
   <section class="about section-pad">
     <div class="container">
       <div class="about-grid">
@@ -1098,135 +1102,153 @@
           </div>
         </div>
         <div class="about-content reveal reveal-delay-2">
-          <span class="section-label">About</span>
-          <h2 class="about-title">Meet <span>Shan Ali</span>,<br />Blockchain &amp; FinTech Legal Counsel</h2>
-          <p class="about-text">Shan Ali is a distinguished legal professional specialising in FinTech, Web3, and
+          <span class="section-label" data-i18n="about-label">About</span>
+          <h2 class="about-title" data-i18n="about-title">Meet <span>Shan Ali</span>,<br />Blockchain &amp; FinTech
+            Legal Counsel</h2>
+          <p class="about-text" data-i18n="about-text-1">Shan Ali is a distinguished legal professional specialising in
+            FinTech, Web3, and
             Blockchain Law. He is a PhD Fellow in Blockchain Law, licensed attorney before the Islamabad High Court, and
             a prolific scholar with over 13 peer-reviewed publications in leading international journals.</p>
-          <blockquote class="about-quote">"The intersection of technology and law is not a challenge — it is an
+          <blockquote class="about-quote" data-i18n="about-quote">"The intersection of technology and law is not a
+            challenge — it is an
             opportunity to build a more equitable digital future."</blockquote>
-          <p class="about-text">With experience spanning Anti-Money Laundering (AML), DeFi compliance, cross-border
+          <p class="about-text" data-i18n="about-text-2">With experience spanning Anti-Money Laundering (AML), DeFi
+            compliance, cross-border
             corporate law, and international research fellowships at institutions across Europe, Shan Ali brings a truly
             global perspective to every legal matter.</p>
           <ul class="about-list">
-            <li>Islamabad High Court Bar Associate</li>
-            <li>Islamabad Bar Council Member</li>
-            <li>PhD Fellow in Blockchain Law (Ongoing)</li>
-            <li>LL.M. — Summa Cum Laude</li>
-            <li>Research Fellow — University of Zurich (UZH)</li>
+            <li data-i18n="about-li-1">Islamabad High Court Bar Associate</li>
+            <li data-i18n="about-li-2">Islamabad Bar Council Member</li>
+            <li data-i18n="about-li-3">PhD Fellow in Blockchain Law (Ongoing)</li>
+            <li data-i18n="about-li-4">LL.M. — Summa Cum Laude</li>
+            <li data-i18n="about-li-5">Research Fellow — University of Zurich (UZH)</li>
           </ul>
-          <a href="pages/about.html" class="btn btn-primary">Full Profile →</a>
+          <a href="pages/about.html" class="btn btn-primary" data-i18n="about-btn">Full Profile →</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════ STATISTICS ═══════════ -->
+  <!--  STATISTICS  -->
 
 
-  <!-- ═══════════ PRACTICE AREAS PREVIEW ═══════════ -->
+  <!--  PRACTICE AREAS PREVIEW  -->
   <section class="practice section-pad">
     <div class="container">
       <div class="text-center reveal">
-        <span class="section-label">What I Do</span>
-        <h2 class="section-title">Practice Areas</h2>
-        <p class="section-subtitle">Comprehensive legal expertise spanning digital assets, FinTech regulation, corporate
+        <span class="section-label" data-i18n="practice-label">What I Do</span>
+        <h2 class="section-title" data-i18n="practice-title">Practice Areas</h2>
+        <p class="section-subtitle" data-i18n="practice-subtitle">Comprehensive legal expertise spanning digital assets,
+          FinTech regulation, corporate
           law, and international compliance.</p>
         <div class="divider"></div>
       </div>
       <div class="practice-grid" style="margin-top:52px;">
         <div class="practice-card reveal">
-          <div class="practice-icon">&#128279;</div>
-          <h3>FinTech &amp; Blockchain Law</h3>
-          <p>Expert legal advice on blockchain technology, smart contracts, DeFi protocols, digital asset regulation,
+          <div class="practice-icon"></div>
+          <h3 data-i18n="pa-1-title">FinTech &amp; Blockchain Law</h3>
+          <p data-i18n="pa-1-desc">Expert legal advice on blockchain technology, smart contracts, DeFi protocols,
+            digital asset regulation,
             and cryptocurrency compliance frameworks.</p>
-          <span class="practice-link">Read More</span>
+          <a href="pages/fintech-blockchain.html" class="practice-link" data-i18n="practice-read-more">Read More</a>
         </div>
         <div class="practice-card reveal reveal-delay-1">
-          <div class="practice-icon">🏢</div>
-          <h3>Corporate &amp; Commercial Law</h3>
-          <p>Full-spectrum corporate legal services: company formation, shareholder disputes, M&amp;A advisory,
+          <div class="practice-icon"></div>
+          <h3 data-i18n="pa-2-title">Corporate &amp; Commercial Law</h3>
+          <p data-i18n="pa-2-desc">Full-spectrum corporate legal services: company formation, shareholder disputes,
+            M&amp;A advisory,
             regulatory compliance, and commercial contracts.</p>
-          <span class="practice-link">Read More</span>
+          <a href="pages/corporate-law.html" class="practice-link" data-i18n="practice-read-more">Read More</a>
         </div>
         <div class="practice-card reveal reveal-delay-2">
-          <div class="practice-icon">🛡️</div>
-          <h3>AML / KYC &amp; Compliance</h3>
-          <p>Anti-money laundering officer (MLRO) services, KYC framework design, compliance audits, and regulatory
+          <div class="practice-icon"></div>
+          <h3 data-i18n="pa-3-title">AML / KYC &amp; Compliance</h3>
+          <p data-i18n="pa-3-desc">Anti-money laundering officer (MLRO) services, KYC framework design, compliance
+            audits, and regulatory
             reporting under FinTech and AML legislation.</p>
-          <span class="practice-link">Read More</span>
+          <a href="pages/aml-kyc-compliance.html" class="practice-link" data-i18n="practice-read-more">Read More</a>
         </div>
         <div class="practice-card reveal reveal-delay-1">
-          <div class="practice-icon">⚖️</div>
-          <h3>Civil Litigation</h3>
-          <p>Expert representation in civil disputes including contract matters, property conflicts, tort claims, and
+          <div class="practice-icon"></div>
+          <h3 data-i18n="pa-4-title">Civil Litigation</h3>
+          <p data-i18n="pa-4-desc">Expert representation in civil disputes including contract matters, property
+            conflicts, tort claims, and
             declaratory suits before Pakistan's courts.</p>
-          <span class="practice-link">Read More</span>
+          <a href="pages/civil-litigation.html" class="practice-link" data-i18n="practice-read-more">Read More</a>
         </div>
         <div class="practice-card reveal reveal-delay-2">
-          <div class="practice-icon">🌍</div>
-          <h3>International &amp; Cross-Border Law</h3>
-          <p>Cross-border legal expertise in international arbitration, foreign arbitral awards, bilateral investment
+          <div class="practice-icon"></div>
+          <h3 data-i18n="pa-5-title">International &amp; Cross-Border Law</h3>
+          <p data-i18n="pa-5-desc">Cross-border legal expertise in international arbitration, foreign arbitral awards,
+            bilateral investment
             treaties, and multi-jurisdictional corporate compliance.</p>
-          <span class="practice-link">Read More</span>
+          <a href="pages/fintech-blockchain.html" class="practice-link" data-i18n="practice-read-more">Read More</a>
         </div>
         <div class="practice-card reveal reveal-delay-3">
-          <div class="practice-icon">🔐</div>
-          <h3>Cybersecurity &amp; Digital Rights</h3>
-          <p>Legal advisory on cyber warfare, digital self-defense law, cybercrime under PECA, data privacy, and
+          <div class="practice-icon"></div>
+          <h3 data-i18n="pa-6-title">Cybersecurity &amp; Digital Rights</h3>
+          <p data-i18n="pa-6-desc">Legal advisory on cyber warfare, digital self-defense law, cybercrime under PECA,
+            data privacy, and
             AI-related legal challenges.</p>
-          <span class="practice-link">Read More</span>
+          <a href="pages/criminal-law.html" class="practice-link" data-i18n="practice-read-more">Read More</a>
         </div>
       </div>
       <div class="text-center" style="margin-top:48px;">
-        <a href="pages/practice-areas.html" class="btn btn-outline-dark">View All Practice Areas →</a>
+        <a href="pages/practice-areas.html" class="btn btn-outline-dark" data-i18n="practice-view-all">View All Practice
+          Areas →</a>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════ WHY CHOOSE ME ═══════════ -->
+  <!--  WHY CHOOSE ME  -->
   <section class="why section-pad">
     <div class="container">
       <div class="text-center reveal">
-        <span class="section-label">Why Choose Me</span>
-        <h2 class="section-title">Excellence You Can Trust</h2>
+        <span class="section-label" data-i18n="why-label">Why Choose Me</span>
+        <h2 class="section-title" data-i18n="why-title">Excellence You Can Trust</h2>
         <div class="divider"></div>
       </div>
       <div class="why-grid" style="margin-top:52px;">
         <div class="why-card reveal">
-          <div class="why-icon">🎓</div>
-          <h3>PhD-Level Expertise</h3>
-          <p>Currently pursuing a PhD in Blockchain Law with a focus on DAOs, digital governance, and regulatory reform
+          <div class="why-icon"></div>
+          <h3 data-i18n="why-1-title">PhD-Level Expertise</h3>
+          <p data-i18n="why-1-desc">Currently pursuing a PhD in Blockchain Law with a focus on DAOs, digital governance,
+            and regulatory reform
             in Italy and Pakistan.</p>
         </div>
         <div class="why-card reveal reveal-delay-1">
-          <div class="why-icon">🌐</div>
-          <h3>International Research Background</h3>
-          <p>Research fellowships at University of Zurich and visiting researcher at institutions in the UK, Italy, and
+          <div class="why-icon"></div>
+          <h3 data-i18n="why-2-title">International Research Background</h3>
+          <p data-i18n="why-2-desc">Research fellowships at University of Zurich and visiting researcher at institutions
+            in the UK, Italy, and
             Germany — bringing global legal insights.</p>
         </div>
         <div class="why-card reveal reveal-delay-2">
-          <div class="why-icon">📚</div>
-          <h3>Prolific Scholar</h3>
-          <p>13+ peer-reviewed publications in international journals covering blockchain, AI law, cyber warfare,
+          <div class="why-icon"></div>
+          <h3 data-i18n="why-3-title">Prolific Scholar</h3>
+          <p data-i18n="why-3-desc">13+ peer-reviewed publications in international journals covering blockchain, AI
+            law, cyber warfare,
             corporate governance, and arbitration.</p>
         </div>
         <div class="why-card reveal">
-          <div class="why-icon">⚡</div>
-          <h3>Tech-Forward Legal Thinking</h3>
-          <p>Specialization in emerging legal areas — DeFi, NFTs, metaverse law, AI legislation — ensuring you get
+          <div class="why-icon"></div>
+          <h3 data-i18n="why-4-title">Tech-Forward Legal Thinking</h3>
+          <p data-i18n="why-4-desc">Specialization in emerging legal areas — DeFi, NFTs, metaverse law, AI legislation —
+            ensuring you get
             cutting-edge legal advice.</p>
         </div>
         <div class="why-card reveal reveal-delay-1">
-          <div class="why-icon">🤝</div>
-          <h3>Client-First Approach</h3>
-          <p>From individual disputes to corporate mandates, every client receives personalized, strategic legal counsel
+          <div class="why-icon"></div>
+          <h3 data-i18n="why-5-title">Client-First Approach</h3>
+          <p data-i18n="why-5-desc">From individual disputes to corporate mandates, every client receives personalized,
+            strategic legal counsel
             tailored to their specific needs.</p>
         </div>
         <div class="why-card reveal reveal-delay-2">
-          <div class="why-icon">🔒</div>
-          <h3>Strict Confidentiality</h3>
-          <p>Your information is protected by the highest standards of attorney-client privilege and professional
+          <div class="why-icon"></div>
+          <h3 data-i18n="why-6-title">Strict Confidentiality</h3>
+          <p data-i18n="why-6-desc">Your information is protected by the highest standards of attorney-client privilege
+            and professional
             confidentiality.</p>
         </div>
       </div>
@@ -1234,32 +1256,32 @@
   </section>
 
 
-  <!-- ═══════════ CTA BANNER ═══════════ -->
+  <!--  CTA BANNER  -->
   <section
     style="background:linear-gradient(135deg,var(--primary-dark),var(--primary));padding:70px 0;text-align:center;">
     <div class="container reveal">
-      <h2 style="color:#fff;font-size:clamp(1.6rem,3vw,2.4rem);margin-bottom:16px;">Ready to Discuss Your Legal Matter?
+      <h2 style="color:#fff;font-size:clamp(1.6rem,3vw,2.4rem);margin-bottom:16px;" data-i18n="cta-title">Ready to
+        Discuss Your Legal Matter?
       </h2>
-      <p style="color:rgba(255,255,255,0.75);margin-bottom:36px;font-size:1.05rem;">Get a free initial consultation in
-        FinTech Law, Blockchain Compliance, Corporate Law, or any legal matter. I'm here to help.</p>
+      <p style="color:rgba(255,255,255,0.75);margin-bottom:36px;font-size:1.05rem;" data-i18n="cta-desc">Contact Shan
+        Ali for FinTech Law, Blockchain Compliance, Corporate Law, or any legal matter. I'm here to help.</p>
       <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
-
-        <a href="pages/contact.html" class="btn btn-accent">Book Free Consultation</a>
-        <a href="https://www.linkedin.com/in/shan-ali-blockchain/" class="btn btn-outline" target="_blank">&#128279;
-          LinkedIn
+        <a href="https://www.linkedin.com/in/shan-ali-blockchain/" class="btn btn-outline" target="_blank"
+          data-i18n="cta-btn-linkedin">LinkedIn
           Profile</a>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════ FOOTER ═══════════ -->
+  <!--  FOOTER  -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-col">
           <div class="footer-shield">S</div>
           <div class="footer-logo-name">SHAN ALI</div>
-          <p class="footer-desc">FinTech, Web3 &amp; Corporate Legal Counsel — PhD Fellow in Blockchain Law — providing
+          <p class="footer-desc" data-i18n="footer-desc">FinTech, Web3 &amp; Corporate Legal Counsel — PhD Fellow in
+            Blockchain Law — providing
             expert legal services in Pakistan and internationally.</p>
           <div class="social-links" style="margin-top:24px;">
             <a href="https://www.linkedin.com/in/shan-ali-blockchain/" class="social-link" aria-label="LinkedIn"
@@ -1267,22 +1289,24 @@
           </div>
         </div>
         <div class="footer-col">
-          <h4>Quick Links</h4>
+          <h4 data-i18n="footer-quick-links">Quick Links</h4>
           <div class="footer-links">
-            <a href="index.html" class="footer-link">Home</a>
-            <a href="pages/about.html" class="footer-link">About Me</a>
-            <a href="pages/practice-areas.html" class="footer-link">Practice Areas</a>
-            <a href="pages/education.html" class="footer-link">Education & Achievements</a>
-            <a href="pages/conferences.html" class="footer-link">Conferences</a>
-            <a href="pages/international.html" class="footer-link">International & Research</a>
-            <a href="pages/publications.html" class="footer-link">Publications</a>
-            <a href="pages/gallery.html" class="footer-link">Gallery</a>
-            <a href="pages/courses.html" class="footer-link">Courses</a>
-            <a href="pages/contact.html" class="footer-link">Contact</a>
+            <a href="index.html" class="footer-link" data-i18n="nav-home">Home</a>
+            <a href="pages/about.html" class="footer-link" data-i18n="nav-about">About Me</a>
+            <a href="pages/practice-areas.html" class="footer-link" data-i18n="nav-practice">Practice Areas</a>
+            <a href="pages/education.html" class="footer-link" data-i18n="nav-education">Education &amp;
+              Achievements</a>
+            <a href="pages/conferences.html" class="footer-link" data-i18n="nav-conferences">Conferences</a>
+            <a href="pages/international.html" class="footer-link" data-i18n="nav-research">International &amp;
+              Research</a>
+            <a href="pages/publications.html" class="footer-link" data-i18n="nav-publications">Publications</a>
+            <a href="pages/gallery.html" class="footer-link" data-i18n="nav-gallery">Gallery</a>
+            <a href="pages/courses.html" class="footer-link" data-i18n="nav-courses">Courses</a>
+            <a href="pages/contact.html" class="footer-link" data-i18n="nav-contact">Contact</a>
           </div>
         </div>
         <div class="footer-col">
-          <h4>Courts &amp; Affiliations</h4>
+          <h4 data-i18n="footer-courts">Courts &amp; Affiliations</h4>
           <div class="footer-links">
             <a href="https://www.supremecourt.gov.pk" target="_blank" class="footer-link">Supreme Court of Pakistan</a>
             <a href="#" class="footer-link">Islamabad High Court</a>
@@ -1291,29 +1315,31 @@
           </div>
         </div>
         <div class="footer-col">
-          <h4>Contact</h4>
+          <h4 data-i18n="footer-contact">Contact</h4>
           <div class="footer-contact-item">
-            <span class="footer-contact-icon">&#128205;</span>
+            <span class="footer-contact-icon"></span>
             <span>Islamabad, Pakistan</span>
           </div>
           <div class="footer-contact-item">
-            <span class="footer-contact-icon">&#128279;</span>
+            <span class="footer-contact-icon"></span>
             <a href="https://www.linkedin.com/in/shan-ali-blockchain/" style="color:inherit;"
               target="_blank">LinkedIn</a>
           </div>
           <div class="footer-contact-item">
-            <span class="footer-contact-icon">&#9993;</span>
+            <span class="footer-contact-icon"></span>
             <a href="mailto:drusmanka00786@gmail.com" style="color:inherit;">drusmanka00786@gmail.com</a>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© 2025 Shan Ali. FinTech &amp; Blockchain Legal Counsel. All rights reserved.</span>
+        <span data-i18n="footer-rights">© 2025 Shan Ali. FinTech &amp; Blockchain Legal Counsel. All rights
+          reserved.</span>
         <span>Islamabad, Pakistan</span>
       </div>
     </div>
   </footer>
 
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
   <script src="js/tilt.js"></script>
 </body>

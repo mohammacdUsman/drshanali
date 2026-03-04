@@ -1,7 +1,112 @@
 ﻿/* =======================================
    ROOT VARIABLES & RESET
 ======================================= */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+
+/* === LANGUAGE SWITCHER === */
+.lang-switcher {
+    position: relative;
+    margin-right: 15px;
+    z-index: 1001;
+}
+
+.lang-current {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text-dark);
+    padding: 6px 12px;
+    border-radius: var(--radius-sm);
+    font-size: 0.75rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: all var(--transition);
+}
+
+.header.scrolled .lang-current {
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.lang-current:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.lang-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 10px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-md);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    min-width: 80px;
+    overflow: hidden;
+}
+
+.lang-switcher:hover .lang-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.lang-option {
+    padding: 10px 15px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-body);
+    cursor: pointer;
+    transition: background var(--transition), color var(--transition);
+    text-align: center;
+}
+
+.lang-option:hover {
+    background: var(--bg-light);
+    color: var(--primary);
+}
+
+.lang-option.active {
+    background: var(--primary);
+    color: #fff;
+}
+
+@media (max-width: 992px) {
+    .desktop-lang-switcher {
+        display: none;
+    }
+}
+
+.mobile-lang-switcher {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    margin-right: 0;
+    z-index: 1600;
+}
+
+.mobile-lang-switcher .lang-current {
+    border-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.mobile-lang-switcher .lang-current:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+@media (max-width: 768px) {
+    .lang-current {
+        padding: 4px 8px;
+        font-size: 0.7rem;
+    }
+}
 
 :root {
     --primary: #4b1f0f;
@@ -25,8 +130,8 @@
     --radius-md: 12px;
     --radius-lg: 20px;
     --transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-    --font-heading: 'Playfair Display', Georgia, serif;
-    --font-body: 'Inter', system-ui, sans-serif;
+    --font-heading: 'Geist', "Geist Fallback", sans-serif;
+    --font-body: 'Geist', "Geist Fallback", sans-serif;
 }
 
 
